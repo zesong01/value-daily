@@ -187,10 +187,11 @@ def main():
     for name in failures:
         code={'中证指数':'CSI 300','Nasdaq':'NASDAQ','美国财政部':'US 10Y'}.get(name)
         for market in report['markets']:
-            if market['code']==code:market['status']='本次采集失败 · 保留原日期'
+            if market['code']==code:market['status']='本次采集失败 · 保留原日期' if market['value'] is not None else '采集未成功 · 暂无核实数据'
     # Same data is a checked status, not a fabricated new edition.
     def signature(r):
-        return json.dumps(dict(markets=r['markets'],evidence=r.get('evidenceUpdates',[])),sort_keys=True,ensure_ascii=False)
+        prices=[{k:m.get(k) for k in ('code','value','change','changeUnit','asOf')} for m in r['markets']]
+        return json.dumps(dict(markets=prices,evidence=r.get('evidenceUpdates',[])),sort_keys=True,ensure_ascii=False)
     if signature(report)==signature(previous):
         save(REPORTS/'update-status.json',{**status,'contentChanged':False,'lastReport':previous['date']+'-'+previous['edition']})
         print('No new evidence. Retained the published report and research date.');return
