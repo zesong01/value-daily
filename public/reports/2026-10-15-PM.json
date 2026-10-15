@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "date": "2026-10-15",
   "edition": "PM",
-  "title": "晚间研究：成本传导与现金回款",
+  "title": "收盘市场与官方证据更新",
   "subtitle": "购进价格涨幅高于出厂价格；回购公告仍需结合现金流和估值审视。",
-  "publishedAt": "2026-10-15T18:41:13+08:00",
-  "cutoff": "研究核验 2026-10-15T18:41:13+08:00；A股行情观察于10月15日16:29:55，纳指与美债数据期为10月14日美国当地日期",
+  "publishedAt": "2026-10-15T23:09:09+08:00",
+  "cutoff": "数据采集 2026-10-15T23:09:09+08:00；行情与公告各自保留观察日期和时区",
   "completeness": "部分数据待核实",
-  "coverageNote": "沪深300采用中证指数16:29:55快照；纳指采用10月14日非实时官方值，美债采用10月14日日度收益率。恒生科技、美元指数、黄金、A股完整成交额与资金流仍未核实，不填零或推算。今晚复核的是既有披露的新研究细节，不把旧公告称为今日事件。",
+  "coverageNote": "行情按各自来源日期展示；恒生科技、美元指数、现货黄金暂未接入可核验报价。本次未成功采集：Nasdaq。财报和投资观点保留独立研究日期，不将数据刷新当作评级变化。",
   "conclusions": [
     {
       "label": "利润传导",
@@ -57,7 +57,7 @@
       "value": 4166.01,
       "change": -1.23,
       "asOf": "2026-10-15 16:29:55",
-      "status": "官方盘后快照 · 按原时点",
+      "status": "官方行情 · 以显示时点为准",
       "sourceIds": [
         "live-csi"
       ],
@@ -82,7 +82,7 @@
       "value": 26692.87,
       "change": -1.88,
       "asOf": "2026-10-14",
-      "status": "官方非实时 · 美国上一交易日",
+      "status": "本次采集失败 · 保留原日期",
       "sourceIds": [
         "live-nasdaq"
       ],
@@ -158,7 +158,7 @@
     }
   ],
   "flow": {
-    "observation": "中证指数10月15日16:29:55快照：沪深300为4,166.01点，较前收盘−1.23%。Nasdaq官网上一个完整交易日10月14日为26,692.87点，−1.88%（America/New_York）。A股全市场成交额、行业涨跌广度与资金流未完成一手核验。",
+    "observation": "成交额、完整行业表现与资金流尚未完成一手核验；不能从指数涨跌推断资金净流入。",
     "interpretation": "两个市场观察日期不同，不作同步资金迁移判断；不能用指数跌幅推算净流出，或把单日回落当成价值低估。",
     "sourceIds": [
       "live-csi",
@@ -567,8 +567,8 @@
       "publisher": "巨潮资讯",
       "url": "https://static.cninfo.com.cn/finalpage/2026-10-08/1225596718.PDF",
       "publishedDate": "2026-10-08",
-      "dataPeriod": "截至2026-09-30回购进展；2026-10-08公告，第1页正文已核验",
-      "accessedAt": "2026-10-15T18:41:13+08:00"
+      "dataPeriod": "公告目录核验；正文待研究复核",
+      "accessedAt": "2026-10-15"
     },
     {
       "id": "filing-1225589886",
@@ -594,8 +594,8 @@
       "publisher": "中证指数",
       "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
       "publishedDate": "2026-10-15",
-      "dataPeriod": "2026-10-15 16:29:55 Asia/Shanghai",
-      "accessedAt": "2026-10-15T18:41:13+08:00"
+      "dataPeriod": "2026-10-15 16:29:55",
+      "accessedAt": "2026-10-15"
     },
     {
       "id": "fed-ca688a2700",
@@ -658,7 +658,7 @@
       "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
       "publishedDate": "2026-10-14",
       "dataPeriod": "10年期 / 2026-10-14",
-      "accessedAt": "2026-10-15T18:41:13+08:00"
+      "accessedAt": "2026-10-15"
     },
     {
       "id": "cn-ppi",
@@ -701,7 +701,7 @@
       "publisher": "国家统计局",
       "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965476.html",
       "publishedAt": "2026-10-14",
-      "summary": "今晚已复核分项：购进价格同比+6.9%，出厂价格+5.0%。口径不同，不能将差值等同利润率降幅；发布于10月14日，数据为9月。"
+      "summary": "已获取官方正文。统计数据期以标题和原文为准，发布日不等于观察期。"
     },
     {
       "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
@@ -722,14 +722,14 @@
       "publisher": "巨潮资讯 · 公司公告",
       "url": "https://static.cninfo.com.cn/finalpage/2026-10-08/1225596718.PDF",
       "publishedAt": "2026-10-08",
-      "summary": "今晚已读PDF：截至9月30日回购58.59万股、金额1,487.02万元，不含交易费；拟用于员工持股或股权激励。历史均价约25.38元，不是当前价格或买入底线。"
+      "summary": "公告已在官方目录核实；PDF财务数字尚未经自动提取复核，不据此更新公司财务或估值结论。"
     },
     {
       "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "publisher": "美联储",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
       "publishedAt": "2026-10-07",
-      "summary": "已进一步阅读9月会议纪要正文：多数与会者当时认为年内可能仍需加息，但后续取决于新数据；纪要于10月7日公布，不是今日决议。"
+      "summary": "原始政策发布。需区分利率决议、实施说明与会议纪要；不据标题推断利率变化。"
     },
     {
       "title": "唯万密封 · 关于变更持续督导财务顾问主办人的公告",
@@ -754,9 +754,9 @@
     }
   ],
   "freshness": {
-    "checkedAt": "2026-10-15T18:41:13+08:00",
+    "checkedAt": "2026-10-15T23:09:09+08:00",
     "researchUpdatedAt": "2026-10-15T18:41:13+08:00",
-    "mode": "晚间深度研究已复核",
-    "reason": "新增复核9月PPI分项、9月FOMC会议纪要、唯万密封回购用途及半年报现金收现与分产品毛利率；维持等待验证，无新增买入评级。各项事实保留原披露日和数据期。"
+    "mode": "数据已更新 · 研究观点维持",
+    "reason": "本次自动核验行情与官方发布。公司财报、估值和投资逻辑沿用标注日期的研究基线；公告出现不代表已完成财报复核。"
   }
 }

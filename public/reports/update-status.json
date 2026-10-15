@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-15T11:41:10+08:00",
+  "checkedAt": "2026-10-15T23:09:09+08:00",
   "successes": [
     "美联储",
     "中证指数",
@@ -11,6 +11,6 @@
     "Nasdaq": "TimeoutError"
   },
   "mode": "官方数据与证据采集",
-  "contentChanged": false,
-  "lastReport": "2026-10-15-AM"
+  "contentChanged": true,
+  "lastReport": "2026-10-15-PM"
 }
