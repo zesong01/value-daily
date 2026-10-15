@@ -1,0 +1,63 @@
+name: Update research data and deploy Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: Fetch current official data before deployment
+        type: boolean
+        default: true
+  schedule:
+    # Asia/Shanghai: 08:30 and 18:30. GitHub may start scheduled runs later.
+    - cron: '30 0,10 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: value-daily-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: npm ci --no-audit --no-fund
+      - name: Collect official data and preserve research dates
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.refresh)
+        run: python scripts/update.py
+      - run: npm run verify
+      - name: Save evidence and report history
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/reports
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: refresh primary sources and dated report archive'
+            git push
+          fi
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy public website
+        id: deployment
+        uses: actions/deploy-pages@v4

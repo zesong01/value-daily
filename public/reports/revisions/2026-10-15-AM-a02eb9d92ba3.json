@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "edition": "AM",
+  "title": "工业景气与盈利质量观察",
+  "subtitle": "景气初现改善，现金流仍是检验盈利质量的关键。",
+  "publishedAt": "2026-10-15T11:20:00+08:00",
+  "cutoff": "首期核验 · 2026年10月15日（北京时间）；各项数据日期见来源",
+  "completeness": "部分数据待核实",
+  "coverageNote": "宏观与公司财报已核验。六项当日行情、实时资金流及公司当前估值未取得完整一手证据，暂不显示数值。首期为研究观察，不构成买入评级。",
+  "conclusions": [
+    {
+      "label": "宏观观察",
+      "title": "复苏，看订单更要看扩散",
+      "body": "9月制造业PMI为50.1，但中小企业仍在荣枯线下。下一步检验订单与回款是否共同改善。",
+      "kind": "推断",
+      "sourceIds": [
+        "cn-pmi"
+      ]
+    },
+    {
+      "label": "公司研究",
+      "title": "利润增长，不等于现金兑现",
+      "body": "唯万密封半年净利润增长42.83%，经营现金流却下降39.02%。把增长质量放在增速之前。",
+      "kind": "推断",
+      "sourceIds": [
+        "company-301161"
+      ]
+    },
+    {
+      "label": "今日策略",
+      "title": "等待证据，也是一种行动",
+      "body": "海外资金成本仍需纳入估值压力测试。当前估值尚未核实的资产，先观察、再定价。",
+      "kind": "推断",
+      "sourceIds": [
+        "us-fed"
+      ]
+    }
+  ],
+  "markets": [
+    {
+      "name": "沪深300",
+      "code": "CSI 300",
+      "unit": "点",
+      "timezone": "Asia/Shanghai",
+      "value": null,
+      "change": null,
+      "asOf": "",
+      "status": "待核实",
+      "sourceIds": []
+    },
+    {
+      "name": "恒生科技",
+      "code": "HSTECH",
+      "unit": "点",
+      "timezone": "Asia/Hong_Kong",
+      "value": null,
+      "change": null,
+      "asOf": "",
+      "status": "待核实",
+      "sourceIds": []
+    },
+    {
+      "name": "纳斯达克",
+      "code": "NASDAQ",
+      "unit": "点",
+      "timezone": "America/New_York",
+      "value": null,
+      "change": null,
+      "asOf": "",
+      "status": "待核实",
+      "sourceIds": []
+    },
+    {
+      "name": "美元指数",
+      "code": "DXY",
+      "unit": "点",
+      "timezone": "America/New_York",
+      "value": null,
+      "change": null,
+      "asOf": "",
+      "status": "待核实",
+      "sourceIds": []
+    },
+    {
+      "name": "美债10Y",
+      "code": "US 10Y",
+      "unit": "%",
+      "timezone": "America/New_York",
+      "value": null,
+      "change": null,
+      "asOf": "",
+      "status": "待核实",
+      "sourceIds": []
+    },
+    {
+      "name": "现货黄金",
+      "code": "GOLD",
+      "unit": "美元/盎司",
+      "timezone": "UTC",
+      "value": null,
+      "change": null,
+      "asOf": "",
+      "status": "待核实",
+      "sourceIds": []
+    }
+  ],
+  "macro": [
+    {
+      "title": "国内需求：改善仍需连续验证",
+      "fact": "9月CPI同比上涨0.9%，环比上涨0.2%；扣除食品和能源的核心CPI同比上涨1.0%。",
+      "transmission": "价格变化可能影响企业名义收入与利润率，但还需区分需求回升与成本传导。不能仅凭单月CPI确认全面复苏。",
+      "watch": "结合订单、终端销量与利润率观察，重点看改善是否从大企业扩散至中小企业。",
+      "sourceIds": [
+        "cn-cpi",
+        "cn-pmi"
+      ]
+    },
+    {
+      "title": "海外利率：重新检验估值假设",
+      "fact": "美联储9月16日加息25基点，目标区间为3.75%–4.00%；下一次例会定于10月27–28日。",
+      "transmission": "资金成本可能经折现率、汇率和融资成本影响全球资产；具体影响取决于盈利增长与市场预期，不能推导出单日方向。",
+      "watch": "关注下一次政策声明与通胀证据，成长资产估值同时做更高折现率的压力情景。",
+      "sourceIds": [
+        "us-fed",
+        "us-calendar"
+      ]
+    }
+  ],
+  "flow": {
+    "observation": "本期未取得A股成交额、行业表现、港美股收盘与资金流的一手完整数据。",
+    "interpretation": "不以缺失数据推断资金流入、趋势反转或市场强弱；晚报优先补齐可核实的收盘证据。",
+    "sourceIds": []
+  },
+  "ideas": [
+    {
+      "id": "industrial-recovery",
+      "name": "工业供应链",
+      "code": "产业观察",
+      "sector": "高端制造",
+      "status": "等待验证",
+      "thesis": "制造业PMI回到扩张区间，但中小企业仍偏弱。关注订单能否传导至回款，而非仅靠生产扩张。",
+      "valuation": "尚未完成行业估值分位核验；景气回升不等于股价低估。逐公司比较正常化盈利与现金回报。",
+      "catalyst": "后续PMI新订单、企业三季报及应收款回收情况。",
+      "action": "新订单持续扩张、企业订单及回款同时改善后，提高研究优先级；当前等待验证。",
+      "invalidation": "生产扩张而新订单回落，或收入增长伴随应收款持续快于收入增长。",
+      "horizon": "1–3年",
+      "evidence": [
+        {
+          "kind": "事实",
+          "text": "9月制造业PMI 50.1，新订单50.5；中型、小型企业PMI分别为49.7和48.9。",
+          "sourceIds": [
+            "cn-pmi"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "cn-pmi"
+      ]
+    },
+    {
+      "id": "cashflow-dividend",
+      "name": "现金流与红利",
+      "code": "质量因子",
+      "sector": "价值资产",
+      "status": "估值观察",
+      "thesis": "在资金成本仍受关注的环境里，以真实自由现金流支持分红的公司更值得研究。高股息率本身不能证明便宜。",
+      "valuation": "未核验具体红利指数估值和股息率，不设买入点。比较可持续分红、债券收益率及企业再投资需求。",
+      "catalyst": "年度分红政策、资本开支计划、盈利与现金流的同步变化。",
+      "action": "先筛除借债分红和资本开支缺口较大的企业；补齐估值及派息覆盖率后再做配置判断。",
+      "invalidation": "盈利下滑、分红依靠新增负债，或长期维持性资本支出被低估。",
+      "horizon": "3年以上",
+      "evidence": [
+        {
+          "kind": "推断",
+          "text": "利率变化会影响收益型资产的相对吸引力；需单独验证公司的分红能力。",
+          "sourceIds": [
+            "us-fed"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "us-fed"
+      ]
+    },
+    {
+      "id": "long-duration-growth",
+      "name": "AI与半导体",
+      "code": "盈利兑现",
+      "sector": "科技成长",
+      "status": "等待验证",
+      "thesis": "高增长叙事需以订单、毛利与现金流兑现。资金成本上升时，更应检验远期盈利假设。",
+      "valuation": "当前价格和盈利一致预期尚未核验。用保守、中性、乐观三档盈利测算，拒绝以行业空间直接替代估值。",
+      "catalyst": "企业三季报、订单披露、客户资本开支与美联储后续政策。",
+      "action": "至少核验两个报告期的订单、现金流和估值，再进入买入研究；不追逐未经证实的主题消息。",
+      "invalidation": "订单延后、客户集中风险扩大、现金流持续落后于利润，或估值依赖无法验证的高增长。",
+      "horizon": "1–3年",
+      "evidence": [
+        {
+          "kind": "事实",
+          "text": "美联储9月16日将联邦基金利率目标区间上调25基点至3.75%–4.00%。",
+          "sourceIds": [
+            "us-fed"
+          ]
+        },
+        {
+          "kind": "推断",
+          "text": "折现率上升可能压低远期现金流的现值，但不能据此预测当天股价。",
+          "sourceIds": [
+            "us-fed"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "us-fed"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "id": "company-301161",
+      "name": "唯万密封",
+      "code": "301161.SZ",
+      "sector": "工业密封",
+      "status": "深入研究",
+      "thesis": "精密密封件是观察工业供应链的切口。利润增长较快，但现金兑现弱于利润表现；竞争壁垒和客户粘性仍需进一步验证。",
+      "valuation": "当前股价、PE(TTM)、ROIC和可比公司估值尚未核实，暂不判断便宜，不设目标价。半年EPS 0.57元不能直接年化为估值依据。",
+      "catalyst": "下一份财报中的回款、应收款、毛利率及客户结构变化。具体披露日期尚未核实。",
+      "action": "列入长期研究清单。只有现金回款改善、增长持续，并补齐当前价格与正常化盈利估值后，才进入买入研究。",
+      "invalidation": "经营现金流持续落后于利润、应收款显著恶化、毛利率下降或增长主要依赖不可持续因素。",
+      "horizon": "1–3年",
+      "period": "2026年半年报 · 未经审计",
+      "metrics": [
+        {
+          "label": "营业收入",
+          "value": "4.45亿元",
+          "note": "同比 +15.35%"
+        },
+        {
+          "label": "归母净利润",
+          "value": "6,859万元",
+          "note": "同比 +42.83%"
+        },
+        {
+          "label": "经营现金流",
+          "value": "4,908万元",
+          "note": "同比 −39.02%"
+        },
+        {
+          "label": "现金 / 利润",
+          "value": "71.55%",
+          "note": "研究计算 · 经营现金流/归母利润"
+        },
+        {
+          "label": "资产负债率",
+          "value": "25.45%",
+          "note": "研究计算 · 期末总负债/总资产"
+        },
+        {
+          "label": "简化自由现金流",
+          "value": "3,700万元",
+          "note": "研究计算 · 经营现金流减购建长期资产支出"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "事实",
+          "text": "营业收入444,701,140.23元，归母净利润68,590,258.12元，经营现金流净额49,075,509.18元；经营现金流同比下降39.02%。",
+          "sourceIds": [
+            "company-301161"
+          ]
+        },
+        {
+          "kind": "事实",
+          "text": "总资产1,329,132,799.69元，总负债338,301,045.87元。短期及长期借款均为0，但仍有租赁和其他负债。",
+          "sourceIds": [
+            "company-301161"
+          ]
+        },
+        {
+          "kind": "推断",
+          "text": "购建长期资产现金支出12,076,280.99元，扣除后得到约3699.92万元简化自由现金流代理值；它不等同于完整的企业自由现金流。",
+          "sourceIds": [
+            "company-301161"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "company-301161"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "中证500ETF · 510580",
+      "role": "A股中盘宽基观察",
+      "valuation": "当前指数估值分位、溢折价和跟踪偏离待核实；低费率不代表低估值。",
+      "fee": "管理费0.15% + 托管费0.05% = 0.20%/年；不含佣金、价差等成本。",
+      "action": "先比较估值、流动性及跟踪表现，再判断是否适合长期分批配置。",
+      "risk": "中盘股波动、成分股盈利下降及折溢价风险。",
+      "sourceIds": [
+        "etf-fee",
+        "etf-identity"
+      ]
+    },
+    {
+      "name": "债券与现金工具",
+      "role": "流动性与期限匹配",
+      "valuation": "收益率、久期和信用利差尚未核实；不作当前收益承诺。",
+      "fee": "按具体基金最新招募说明书核实，尚未指定产品。",
+      "action": "短期用款先匹配流动性和期限，再考虑收益；长久期债券另做利率上行情景。",
+      "risk": "利率、信用、赎回和再投资风险；债券基金不等于保本。",
+      "sourceIds": []
+    },
+    {
+      "name": "黄金与商品",
+      "role": "组合分散观察",
+      "valuation": "当前金价及实际利率未核实，不判断贵便宜。黄金没有经营现金流，不能用PE估值。",
+      "fee": "未指定产品；需比较管理费、跟踪误差与交易成本。",
+      "action": "先明确分散风险的目的与可承受波动，不凭单条新闻追涨。",
+      "risk": "实际利率变化、汇率、供需及短期价格波动。",
+      "sourceIds": [
+        "us-fed"
+      ]
+    }
+  ],
+  "strategy": {
+    "stance": "今天的动作：补齐证据，保持耐心。",
+    "actions": [
+      "研究工业供应链的订单与回款，优先排查利润增长但现金流落后的公司。",
+      "对已有持仓复核买入逻辑与资金期限；没有新证据，不因单日涨跌强行改变判断。",
+      "补齐当前价格、正常化盈利及可比估值后，再决定是否进入买入研究；本期不设个股目标价。"
+    ],
+    "scenarios": [
+      {
+        "name": "改善得到验证",
+        "trigger": "订单连续改善，企业回款与利润同步增长，估值仍有安全边际。",
+        "response": "提高研究优先级，按自己的风险承受能力评估分批配置。"
+      },
+      {
+        "name": "增长未能兑现",
+        "trigger": "新订单转弱，应收款或存货上升，经营现金流持续落后。",
+        "response": "下调增长假设；重新估值，必要时退出原有研究逻辑。"
+      },
+      {
+        "name": "资金成本再上行",
+        "trigger": "政策或通胀证据支持更高利率维持更久。",
+        "response": "对成长资产提高折现率情景，检查杠杆和近期资金需求。"
+      }
+    ],
+    "catalysts": [
+      {
+        "date": "10月27–28日",
+        "event": "美联储议息会议",
+        "watch": "政策路径与通胀判断；会议日期按美国当地时间。",
+        "sourceIds": [
+          "us-calendar"
+        ]
+      },
+      {
+        "date": "下一份财报",
+        "event": "唯万密封现金回款",
+        "watch": "关注经营现金流、应收款和毛利率；具体披露日待核验。",
+        "sourceIds": [
+          "company-301161"
+        ]
+      }
+    ]
+  },
+  "tracking": [
+    {
+      "id": "industrial-recovery",
+      "name": "工业供应链景气扩散",
+      "firstSeen": "2026-10-15",
+      "status": "首次建档",
+      "originalThesis": "制造业PMI回到扩张区间，但中小企业仍偏弱。关注订单能否传导至回款，而非仅靠生产扩张。",
+      "update": "建立基线：9月PMI与企业规模分化。尚无后续验证记录。",
+      "invalidation": "生产扩张而新订单回落，或收入增长伴随应收款持续快于收入增长。",
+      "sourceIds": [
+        "cn-pmi"
+      ]
+    },
+    {
+      "id": "company-301161",
+      "name": "唯万密封 · 盈利质量",
+      "firstSeen": "2026-10-15",
+      "status": "首次建档",
+      "originalThesis": "精密密封件是观察工业供应链的切口。利润增长较快，但现金兑现弱于利润表现；竞争壁垒和客户粘性仍需进一步验证。",
+      "update": "建立2026H1财务基线，等待下一份财报；没有模拟收益或过往推荐记录。",
+      "invalidation": "经营现金流持续落后于利润、应收款显著恶化、毛利率下降或增长主要依赖不可持续因素。",
+      "sourceIds": [
+        "company-301161"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "cn-cpi",
+      "title": "2026年9月份居民消费价格同比上涨0.9%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261014_1965477.html",
+      "publishedDate": "2026-10-14",
+      "dataPeriod": "2026年9月",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "cn-pmi",
+      "title": "2026年9月中国采购经理指数运行情况",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+      "publishedDate": "2026-09-30",
+      "dataPeriod": "2026年9月",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "us-fed",
+      "title": "Federal Reserve issues FOMC statement",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "publishedDate": "2026-09-16 14:00 EDT",
+      "dataPeriod": "2026年9月会议",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "us-calendar",
+      "title": "FOMC calendars and information",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "publishedDate": "2026-10-07（页面更新）",
+      "dataPeriod": "2026年会议日历",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "company-301161",
+      "title": "唯万密封 2026 年半年度报告",
+      "publisher": "深交所 · 公司公告",
+      "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-08-25/514a80ed-7cd7-4e64-b917-17dc5edcfcdd.PDF",
+      "publishedDate": "2026-08-25",
+      "dataPeriod": "2026H1，未经审计；第8、48–49、56页",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "etf-fee",
+      "title": "中证500ETF（510580）费率结构",
+      "publisher": "易方达基金",
+      "url": "https://api.efunds.com.cn/owch/oURL/app/fee_m.shtml?fundcode=510580",
+      "publishedDate": "页面未注明生效日",
+      "dataPeriod": "2026-10-15核验",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "etf-identity",
+      "title": "易方达中证500ETF产品资料",
+      "publisher": "易方达基金",
+      "url": "https://api.efunds.com.cn/owch/oURL/website/weixin/wx_fundinfo.shtml?fundcode=510580",
+      "publishedDate": "官网产品页",
+      "dataPeriod": "基金规模字段截至2026-06-30",
+      "accessedAt": "2026-10-15"
+    }
+  ]
+}
