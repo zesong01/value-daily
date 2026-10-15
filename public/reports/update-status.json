@@ -1,16 +1,16 @@
 {
-  "checkedAt": "2026-10-15T11:38:33+08:00",
+  "checkedAt": "2026-10-15T11:41:10+08:00",
   "successes": [
-    "巨潮资讯",
-    "中证指数",
     "美联储",
-    "国家统计局",
-    "美国财政部"
+    "中证指数",
+    "巨潮资讯",
+    "美国财政部",
+    "国家统计局"
   ],
   "failures": {
     "Nasdaq": "TimeoutError"
   },
   "mode": "官方数据与证据采集",
-  "contentChanged": true,
+  "contentChanged": false,
   "lastReport": "2026-10-15-AM"
 }
