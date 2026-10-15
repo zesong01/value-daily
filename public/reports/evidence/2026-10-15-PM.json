@@ -1,0 +1,131 @@
+{
+  "revision": "2026-10-15-pm-cost-cash-buyback-v1",
+  "reportId": "2026-10-15-PM",
+  "researchUpdatedAt": "2026-10-15T18:41:13+08:00",
+  "decision": "维持等待验证与深入研究；无新增买入评级",
+  "newPublication": false,
+  "scope": "复核既有一手披露的新研究细节，并更新有真实时标的官方行情；不把旧公告冒充当日事件。",
+  "primarySources": [
+    {
+      "id": "company-301161",
+      "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-08-25/514a80ed-7cd7-4e64-b917-17dc5edcfcdd.PDF",
+      "publishedDate": "2026-08-25",
+      "dataPeriod": "2026H1未经审计；第8、17–21、22、41、48–49、55–56页；回购交易另见10月8日公告"
+    },
+    {
+      "id": "filing-1225596718",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-08/1225596718.PDF",
+      "publishedDate": "2026-10-08",
+      "dataPeriod": "截至2026-09-30回购进展；2026-10-08公告，第1页正文已核验"
+    },
+    {
+      "id": "live-csi",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
+      "publishedDate": "2026-10-15",
+      "dataPeriod": "2026-10-15 16:29:55 Asia/Shanghai"
+    },
+    {
+      "id": "live-treasury",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "publishedDate": "2026-10-14",
+      "dataPeriod": "10年期 / 2026-10-14"
+    },
+    {
+      "id": "cn-ppi",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965476.html",
+      "publishedDate": "2026-10-14 09:30 Asia/Shanghai",
+      "dataPeriod": "2026年9月；同比与环比口径分别标注"
+    },
+    {
+      "id": "us-fed-minutes",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
+      "publishedDate": "2026-10-07 14:00 America/New_York",
+      "dataPeriod": "2026-09-15至16日会议；不是10月15日新决议"
+    },
+    {
+      "id": "live-nasdaq",
+      "url": "https://api.nasdaq.com/api/quote/COMP/info?assetclass=index",
+      "publishedDate": "2026-10-14 America/New_York",
+      "dataPeriod": "原始时标 Oct 14, 2026；isRealTime=false"
+    }
+  ],
+  "fileDigests": {
+    "buyback.pdf": "4b204abe811a15b76842f87d8ac2fdf5a8f6ba05e231630256f3760c7caccf5f",
+    "halfyear.pdf": "cb555103848d923ac48d57ba539ff8d0ddff9ec15c81da5da8b9b08a143c8b3c",
+    "ppi.html": "e50ab7dc7d03a9bc30c4aa9b9c4bd5e06b6036cff29124f2a3f53e485fcbcf02",
+    "csi.json": "df57137ea504a9a728b2420bd5f19c67f2f95523f27a2b0ad2a8064a954fc89e",
+    "nasdaq.json": "e6c74ce679f086006290a906b3a7dfc9811bed9e995fffc941dbf537c202f578"
+  },
+  "calculations": [
+    {
+      "name": "销售收现同比",
+      "formula": "(313484768.71 / 320434087.55 - 1) * 100",
+      "value": -2.168720217356923,
+      "unit": "%",
+      "period": "2026H1对2025H1",
+      "sourceIds": [
+        "company-301161"
+      ],
+      "limitation": "现金流含税并受结算时点、票据影响，不等于收入或坏账判断"
+    },
+    {
+      "name": "历史回购均价",
+      "formula": "14870206 / 585900",
+      "value": 25.38010923365762,
+      "unit": "元/股",
+      "period": "截至2026-09-30累计交易",
+      "sourceIds": [
+        "filing-1225596718"
+      ],
+      "limitation": "不含交易费用；非当前股价、内在价值或支持位"
+    },
+    {
+      "name": "半年末每股账面净资产",
+      "formula": "985826866.09 / 120000000",
+      "value": 8.215223884083334,
+      "unit": "元/股",
+      "period": "2026-06-30",
+      "sourceIds": [
+        "company-301161"
+      ],
+      "limitation": "归母口径；未调整后续损益与回购"
+    },
+    {
+      "name": "跨期历史PB参照",
+      "formula": "(14870206 / 585900) / (985826866.09 / 120000000)",
+      "value": 3.0893995820163296,
+      "unit": "倍",
+      "period": "9月末累计回购成本与6月末净资产",
+      "sourceIds": [
+        "company-301161",
+        "filing-1225596718"
+      ],
+      "limitation": "不是现价PB，不用于判定当前低估或目标价"
+    }
+  ],
+  "missing": [
+    "恒生科技官方报价",
+    "美元指数与黄金报价",
+    "公司当前股价、TTM与可比估值",
+    "全市场成交额和资金净流向",
+    "公司三季报确切披露日期"
+  ],
+  "sourceLimitations": [
+    "深交所个股报价请求未成功，未采用搜索摘要的第三方估值或预约日期",
+    "恒生科技官方端点未获取有效数据",
+    "国债收益率为名义利率，未核实实际利率"
+  ],
+  "preservedTheses": [
+    {
+      "id": "industrial-recovery",
+      "firstSeen": "2026-10-15",
+      "originalThesis": "制造业PMI回到扩张区间，但中小企业仍偏弱。关注订单能否传导至回款，而非仅靠生产扩张。"
+    },
+    {
+      "id": "company-301161",
+      "firstSeen": "2026-10-15",
+      "originalThesis": "精密密封件是观察工业供应链的切口。利润增长较快，但现金兑现弱于利润表现；竞争壁垒和客户粘性仍需进一步验证。"
+    }
+  ],
+  "notification": "routine_no_material_opportunity_or_invalidation"
+}

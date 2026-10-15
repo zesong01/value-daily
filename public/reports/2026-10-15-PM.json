@@ -1,0 +1,762 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "edition": "PM",
+  "title": "晚间研究：成本传导与现金回款",
+  "subtitle": "购进价格涨幅高于出厂价格；回购公告仍需结合现金流和估值审视。",
+  "publishedAt": "2026-10-15T18:41:13+08:00",
+  "cutoff": "研究核验 2026-10-15T18:41:13+08:00；A股行情观察于10月15日16:29:55，纳指与美债数据期为10月14日美国当地日期",
+  "completeness": "部分数据待核实",
+  "coverageNote": "沪深300采用中证指数16:29:55快照；纳指采用10月14日非实时官方值，美债采用10月14日日度收益率。恒生科技、美元指数、黄金、A股完整成交额与资金流仍未核实，不填零或推算。今晚复核的是既有披露的新研究细节，不把旧公告称为今日事件。",
+  "conclusions": [
+    {
+      "label": "利润传导",
+      "title": "价格上涨，要分清谁能提价",
+      "body": "9月购进价格同比+6.9%，出厂价格+5.0%。不能把两者差值当作企业毛利率降幅；制造企业仍需验证售价、采购成本与毛利率。",
+      "kind": "推断",
+      "sourceIds": [
+        "cn-ppi"
+      ]
+    },
+    {
+      "label": "公司研究",
+      "title": "回购有用途，回款有条件",
+      "body": "唯万密封回购拟用于员工持股或股权激励，并非已确定注销。半年销售收现同比约−2.17%，继续核验回款，不因回购上调评级。",
+      "kind": "推断",
+      "sourceIds": [
+        "filing-1225596718",
+        "company-301161"
+      ]
+    },
+    {
+      "label": "海外利率",
+      "title": "把更高资金成本纳入估值",
+      "body": "9月会议纪要显示，多数与会者当时认为年内可能仍需加息；这不是下一次会议的承诺。成长资产继续检验融资与盈利兑现。",
+      "kind": "推断",
+      "sourceIds": [
+        "us-fed-minutes"
+      ]
+    },
+    {
+      "label": "市场观察",
+      "title": "指数下跌，不能替代估值",
+      "body": "沪深300盘后快照跌1.23%；纳指10月14日跌1.88%。缺少完整资金流与估值证据，本期不据此判断资金撤离或出现买点。",
+      "kind": "推断",
+      "sourceIds": [
+        "live-csi",
+        "live-nasdaq"
+      ]
+    }
+  ],
+  "markets": [
+    {
+      "name": "沪深300",
+      "code": "CSI 300",
+      "unit": "点",
+      "timezone": "Asia/Shanghai",
+      "value": 4166.01,
+      "change": -1.23,
+      "asOf": "2026-10-15 16:29:55",
+      "status": "官方盘后快照 · 按原时点",
+      "sourceIds": [
+        "live-csi"
+      ],
+      "changeUnit": "%"
+    },
+    {
+      "name": "恒生科技",
+      "code": "HSTECH",
+      "unit": "点",
+      "timezone": "Asia/Hong_Kong",
+      "value": null,
+      "change": null,
+      "asOf": "",
+      "status": "待核实",
+      "sourceIds": []
+    },
+    {
+      "name": "纳斯达克",
+      "code": "NASDAQ",
+      "unit": "点",
+      "timezone": "America/New_York",
+      "value": 26692.87,
+      "change": -1.88,
+      "asOf": "2026-10-14",
+      "status": "官方非实时 · 美国上一交易日",
+      "sourceIds": [
+        "live-nasdaq"
+      ],
+      "changeUnit": "%"
+    },
+    {
+      "name": "美元指数",
+      "code": "DXY",
+      "unit": "点",
+      "timezone": "America/New_York",
+      "value": null,
+      "change": null,
+      "asOf": "",
+      "status": "待核实",
+      "sourceIds": []
+    },
+    {
+      "name": "美债10Y",
+      "code": "US 10Y",
+      "unit": "%",
+      "timezone": "America/New_York",
+      "value": 5.19,
+      "change": -2.0,
+      "asOf": "2026-10-14",
+      "status": "官方日度收益率 · 非实时",
+      "sourceIds": [
+        "live-treasury"
+      ],
+      "changeUnit": "bp"
+    },
+    {
+      "name": "现货黄金",
+      "code": "GOLD",
+      "unit": "美元/盎司",
+      "timezone": "UTC",
+      "value": null,
+      "change": null,
+      "asOf": "",
+      "status": "待核实",
+      "sourceIds": []
+    }
+  ],
+  "macro": [
+    {
+      "title": "国内价格：成本传导比总量涨幅更重要",
+      "fact": "国家统计局10月14日公布：9月工业出厂价格同比+5.0%、购进价格+6.9%；生产资料出厂价格+6.5%、生活资料−0.1%；化工原料购进价格+12.6%。均为9月同比数据。",
+      "transmission": "研究推断：上游涨价可能增加下游采购压力；拥有调价能力、长协安排或产品组合改善的企业可能更能守住利润。各指数权重和样本不同，6.9%与5.0%的差值不是毛利率变化，也不能直接套用到唯万密封。",
+      "watch": "逐企业核对原料暴露、合同调价周期、单位售价和分产品毛利率；不从PPI回升直接推出全面盈利复苏。",
+      "sourceIds": [
+        "cn-ppi"
+      ]
+    },
+    {
+      "title": "国内需求：改善仍需连续验证",
+      "fact": "9月CPI同比上涨0.9%，环比上涨0.2%；扣除食品和能源的核心CPI同比上涨1.0%。",
+      "transmission": "价格变化可能影响企业名义收入与利润率，但还需区分需求回升与成本传导。不能仅凭单月CPI确认全面复苏。",
+      "watch": "结合订单、终端销量与利润率观察，重点看改善是否从大企业扩散至中小企业。",
+      "sourceIds": [
+        "cn-cpi",
+        "cn-pmi"
+      ]
+    },
+    {
+      "title": "海外资金成本：区分会议看法与未来决议",
+      "fact": "10月7日发布的9月FOMC纪要记载：多数与会者当时认为年内再加息可能适宜，同时强调取决于后续数据；9月已上调25基点至3.75%–4.00%。",
+      "transmission": "研究推断：较高折现率与融资成本会增加远期盈利兑现要求。A股、港股和美股成长资产都需分别核对负债币种、资金来源及自身盈利，不能据此推算同幅度跌幅。",
+      "watch": "10月27–28日会议按美国当地日期；最新通胀、订单和资本开支证据比旧纪要标题更能影响后续预期。",
+      "sourceIds": [
+        "us-fed-minutes",
+        "us-fed",
+        "us-calendar"
+      ]
+    }
+  ],
+  "flow": {
+    "observation": "中证指数10月15日16:29:55快照：沪深300为4,166.01点，较前收盘−1.23%。Nasdaq官网上一个完整交易日10月14日为26,692.87点，−1.88%（America/New_York）。A股全市场成交额、行业涨跌广度与资金流未完成一手核验。",
+    "interpretation": "两个市场观察日期不同，不作同步资金迁移判断；不能用指数跌幅推算净流出，或把单日回落当成价值低估。",
+    "sourceIds": [
+      "live-csi",
+      "live-nasdaq"
+    ]
+  },
+  "ideas": [
+    {
+      "id": "industrial-recovery",
+      "name": "工业供应链",
+      "code": "产业观察",
+      "sector": "高端制造",
+      "status": "等待验证",
+      "thesis": "PMI温和改善仍需订单、售价与回款共同验证。新增PPI分项显示成本传导压力，工业供应链需区分能否提价，而非统一受益。",
+      "valuation": "行业估值分位未核实，不给买入区间。正常化利润应按原料涨价、售价转嫁和营运资金占用分别测算，不能把收入涨价等同利润增长。",
+      "catalyst": "三季报的毛利率、应收款与经营现金流，以及下一期PMI/PPI分项。",
+      "action": "维持等待验证；企业订单改善且分产品毛利率、销售收现同步稳定后，再结合已核实价格进入估值研究。",
+      "invalidation": "原料上涨无法传导、分产品毛利率下降且回款持续落后；若仅是季节性或采购时点变化，先核实再下调判断。",
+      "horizon": "1–3年",
+      "evidence": [
+        {
+          "kind": "事实",
+          "text": "9月制造业PMI 50.1，新订单50.5；中型、小型企业PMI分别为49.7和48.9。",
+          "sourceIds": [
+            "cn-pmi"
+          ]
+        },
+        {
+          "kind": "事实",
+          "text": "9月工业生产者购进价格同比+6.9%、出厂价格+5.0%；两项指数的样本与权重不同。",
+          "sourceIds": [
+            "cn-ppi"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "cn-pmi",
+        "cn-ppi",
+        "company-301161"
+      ]
+    },
+    {
+      "id": "cashflow-dividend",
+      "name": "现金流与红利",
+      "code": "质量因子",
+      "sector": "价值资产",
+      "status": "估值观察",
+      "thesis": "在资金成本仍受关注的环境里，以真实自由现金流支持分红的公司更值得研究。高股息率本身不能证明便宜。",
+      "valuation": "未核验具体红利指数估值和股息率，不设买入点。比较可持续分红、债券收益率及企业再投资需求。",
+      "catalyst": "年度分红政策、资本开支计划、盈利与现金流的同步变化。",
+      "action": "先核验分红是否由可持续自由现金流覆盖，结合实际债券收益率、税费和再投资需求估值；不把用于员工激励的回购视为已实现的股东现金回报。",
+      "invalidation": "盈利下滑、分红依靠新增负债，或长期维持性资本支出被低估。",
+      "horizon": "3年以上",
+      "evidence": [
+        {
+          "kind": "推断",
+          "text": "利率变化会影响收益型资产的相对吸引力；需单独验证公司的分红能力。",
+          "sourceIds": [
+            "us-fed"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "us-fed",
+        "filing-1225596718"
+      ]
+    },
+    {
+      "id": "long-duration-growth",
+      "name": "AI与半导体",
+      "code": "盈利兑现",
+      "sector": "科技成长",
+      "status": "等待验证",
+      "thesis": "AI与半导体的投资增长仍要兑现为订单、利润和现金。9月FOMC纪要增加了审视融资成本的依据，但不能据此判断中国企业已获新增订单。",
+      "valuation": "当前价格和一致预期待核验；按订单转化、利润率、资本开支分别测算现金流，再对折现率上升作压力情景，不据行业空间给估值溢价。",
+      "catalyst": "企业三季报、订单披露、客户资本开支与美联储后续政策。",
+      "action": "维持等待验证：核实至少两个报告期的订单、回款及融资条件；同时取得当前价格和可比估值，才进入买入研究。",
+      "invalidation": "订单延后、客户集中风险扩大、现金流持续落后于利润，或估值依赖无法验证的高增长。",
+      "horizon": "1–3年",
+      "evidence": [
+        {
+          "kind": "事实",
+          "text": "美联储9月16日将联邦基金利率目标区间上调25基点至3.75%–4.00%。",
+          "sourceIds": [
+            "us-fed"
+          ]
+        },
+        {
+          "kind": "推断",
+          "text": "折现率上升可能压低远期现金流的现值，但不能据此预测当天股价。",
+          "sourceIds": [
+            "us-fed"
+          ]
+        },
+        {
+          "kind": "事实",
+          "text": "9月FOMC纪要中的多数与会者当时认为年内可能仍需加息；未来会议决定取决于新增信息。",
+          "sourceIds": [
+            "us-fed-minutes"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "us-fed",
+        "us-fed-minutes"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "id": "company-301161",
+      "name": "唯万密封",
+      "code": "301161.SZ",
+      "sector": "工业密封",
+      "status": "深入研究",
+      "thesis": "公司披露的材料配方、客户认证与海外批量供应，是继续研究技术壁垒的线索，尚非独立证明。半年销售收现下降、部分液压产品毛利率承压；维持研究名单，现金兑现条件不放宽。",
+      "valuation": "历史交易参照：截至9月30日累计回购金额1,487.02万元÷58.59万股，平均成本约25.38元/股；以6月末归母净资产9.8583亿元÷1.20亿股计算，每股净资产约8.215元，对应约3.09倍静态账面净资产。此为跨期历史参照，未调整期后损益/回购对净资产的影响，不是当前PB、内在价值或买入底线。当前股价、TTM盈利与可比估值仍未核实。",
+      "catalyst": "下一份财报的销售收现、应收账款账龄和分产品毛利率；回购实际用途及后续激励条款。具体三季报披露日未从一手来源核实。",
+      "action": "保持深入研究，不上调买入评级。若后续报告现金回收改善、液压产品毛利率稳定，并补齐现价、全年正常化盈利与同业比较，再判断安全边际；本期不设目标价。",
+      "invalidation": "若连续报告期收现弱于收入且账龄恶化，或核心产品毛利率持续下滑，需下调增长与盈利质量假设；单期现金流下降尚不足以证实坏账或竞争力丧失。回购拟用于激励，不假定永久缩股。",
+      "horizon": "1–3年",
+      "period": "财务：2026H1未经审计；回购：截至2026-09-30",
+      "metrics": [
+        {
+          "label": "营业收入",
+          "value": "4.45亿元",
+          "note": "2026H1 · 同比 +15.35%"
+        },
+        {
+          "label": "归母净利润",
+          "value": "6,859万元",
+          "note": "2026H1 · 同比 +42.83%"
+        },
+        {
+          "label": "经营现金流",
+          "value": "4,908万元",
+          "note": "2026H1 · 同比 −39.02%"
+        },
+        {
+          "label": "销售收现",
+          "value": "3.13亿元",
+          "note": "2026H1 · 研究计算同比 −2.17%"
+        },
+        {
+          "label": "液压密封包毛利率",
+          "value": "37.66%",
+          "note": "2026H1 · 同比下降2.29个百分点"
+        },
+        {
+          "label": "历史回购均价",
+          "value": "25.38元",
+          "note": "截至9月30日 · 研究计算，非当前股价"
+        },
+        {
+          "label": "每股账面净资产",
+          "value": "8.215元",
+          "note": "6月末归母净资产÷总股本；研究计算"
+        },
+        {
+          "label": "应收账款账面值",
+          "value": "5.12亿元",
+          "note": "6月末 · 比上年末约 +7.95%，非同比"
+        },
+        {
+          "label": "简化自由现金流",
+          "value": "3,700万元",
+          "note": "2026H1经营现金流减购建长期资产支出"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "事实",
+          "text": "半年报披露公司通过客户认证与材料开发拓展应用，并披露费斯托部分海外工厂批量供应。上述业务进展为公司陈述，尚未经客户侧独立验证（第17–19页）。",
+          "sourceIds": [
+            "company-301161"
+          ]
+        },
+        {
+          "kind": "事实",
+          "text": "2026H1销售商品、提供劳务收到现金313,484,768.71元，上年同期320,434,087.55元。管理层将经营现金流下降主要归于采购款和薪酬支付增加（第20、55–56页）。",
+          "sourceIds": [
+            "company-301161"
+          ]
+        },
+        {
+          "kind": "推断",
+          "text": "销售收现同比约−2.17%；该现金流项目含税且受结算时点影响，与收入不可直接等同。需核验票据结算、账龄及后续收款，不能仅凭该比率断言客户违约。",
+          "sourceIds": [
+            "company-301161"
+          ]
+        },
+        {
+          "kind": "事实",
+          "text": "半年液压密封件、液压密封包毛利率为42.88%、37.66%，同比分别下降0.91、2.29个百分点；泵阀密封件毛利率57.11%，同比增加1.13个百分点。产品结构差异不能被总体利润增速掩盖（第21页）。",
+          "sourceIds": [
+            "company-301161"
+          ]
+        },
+        {
+          "kind": "事实",
+          "text": "10月8日公告披露截至9月30日回购585,900股、成交14,870,206元（不含费用），用途为员工持股或股权激励。历史成交区间22.95–26.06元，方案上限32元，不代表估值结论。",
+          "sourceIds": [
+            "filing-1225596718"
+          ]
+        },
+        {
+          "kind": "推断",
+          "text": "回购均价约25.38元÷半年末每股净资产约8.215元＝约3.09倍历史账面价值参照；分母滞后且未调整期后变化，无法据此判断当前便宜或昂贵。",
+          "sourceIds": [
+            "company-301161",
+            "filing-1225596718"
+          ]
+        }
+      ],
+      "sourceIds": [
+        "company-301161",
+        "filing-1225596718"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "中证500ETF · 510580",
+      "role": "A股中盘宽基观察",
+      "valuation": "当前指数估值分位、溢折价和跟踪偏离待核实；低费率不代表低估值。",
+      "fee": "管理费0.15% + 托管费0.05% = 0.20%/年；不含佣金、价差等成本。",
+      "action": "维持估值观察。费率核验仍为早报基线；必须补齐中证500当前估值、基金折溢价与跟踪表现，不从沪深300下跌推导该ETF低估。",
+      "risk": "中盘股波动、成分股盈利下降及折溢价风险。",
+      "sourceIds": [
+        "etf-fee",
+        "etf-identity"
+      ]
+    },
+    {
+      "name": "债券与现金工具",
+      "role": "流动性与期限匹配",
+      "valuation": "美国10年期名义国债日度收益率10月14日为5.19%；不能等同人民币投资者的到手回报，也不代表已核实具体债券基金收益率。",
+      "fee": "按具体基金最新招募说明书核实，尚未指定产品。",
+      "action": "短期用款先匹配币种、期限和流动性；长久期债券另做利率上行情景。跨币种配置需把汇率、税费和对冲成本计入。",
+      "risk": "利率、信用、赎回和再投资风险；债券基金不等于保本。",
+      "sourceIds": [
+        "live-treasury",
+        "us-fed-minutes"
+      ]
+    },
+    {
+      "name": "黄金与商品",
+      "role": "组合分散观察",
+      "valuation": "现货金价和实际利率未核实。10年期美债5.19%是名义收益率，不能直接当作实际利率；本期维持分散观察，不判断黄金贵便宜。",
+      "fee": "未指定产品；需比较管理费、跟踪误差与交易成本。",
+      "action": "先明确分散风险的目的与可承受波动，不凭单条新闻追涨。",
+      "risk": "实际利率变化、汇率、供需及短期价格波动。",
+      "sourceIds": [
+        "live-treasury",
+        "us-fed-minutes"
+      ]
+    }
+  ],
+  "strategy": {
+    "stance": "维持等待验证：成本能否转嫁，利润能否收现。",
+    "actions": [
+      "工业企业先核对售价、原料成本和分产品毛利率；PPI回升不自动构成买入理由。",
+      "唯万密封保持研究名单：检查销售收现、应收账龄和回购用途；历史回购均价不作为抄底价。",
+      "补齐现价、TTM与正常化盈利、同业估值后再讨论安全边际；本期不新增个股或ETF买入评级。",
+      "成长资产对更高融资成本作情景复核；长期资金与近期用款分别匹配期限，避免依据单日波动改动长期逻辑。"
+    ],
+    "scenarios": [
+      {
+        "name": "改善兑现",
+        "trigger": "后续报告订单改善，销售收现与收入趋势同步，核心产品毛利率稳定，核实估值有安全边际。",
+        "response": "提高研究优先级；分别验证现金流可持续性与估值，再评估配置。"
+      },
+      {
+        "name": "成本挤压",
+        "trigger": "购进成本上涨而企业不能调价，核心产品毛利率连续走弱，同时应收账龄恶化。",
+        "response": "下调利润率和现金转化假设，重新估值；若核心逻辑失效则明确记录，不以回购消息维持乐观判断。"
+      },
+      {
+        "name": "海外利率维持更高",
+        "trigger": "后续官方通胀或政策证据进一步支持较高资金成本，而非仅重复旧纪要。",
+        "response": "压力测试远期现金流与再融资需求；港美股另核对资金币种，不推算必然同幅下跌。"
+      }
+    ],
+    "catalysts": [
+      {
+        "date": "10月27–28日",
+        "event": "美联储议息会议",
+        "watch": "政策路径与通胀判断；会议日期按美国当地时间。",
+        "sourceIds": [
+          "us-calendar"
+        ]
+      },
+      {
+        "date": "下一份财报",
+        "event": "唯万密封现金回款",
+        "watch": "销售收现、应收账龄及液压产品毛利率；具体披露日期待一手核验，避免采用未经确认的预约时间。",
+        "sourceIds": [
+          "company-301161"
+        ]
+      },
+      {
+        "date": "下一次回购进展披露",
+        "event": "唯万密封资本配置",
+        "watch": "区分新增回购、激励转让和注销；仍需等待下一份官方公告，不能预设结果。",
+        "sourceIds": [
+          "filing-1225596718"
+        ]
+      }
+    ]
+  },
+  "tracking": [
+    {
+      "id": "industrial-recovery",
+      "name": "工业供应链景气扩散",
+      "firstSeen": "2026-10-15",
+      "status": "补充证据 · 继续等待",
+      "originalThesis": "制造业PMI回到扩张区间，但中小企业仍偏弱。关注订单能否传导至回款，而非仅靠生产扩张。",
+      "update": "2026-10-15晚报：复核9月PPI购进与出厂价格分项，新增成本转嫁验证条件。早报订单与回款逻辑保留；没有新增订单/估值证据，不上调判断。",
+      "invalidation": "生产扩张而新订单回落，或收入增长伴随应收款持续快于收入增长。",
+      "sourceIds": [
+        "cn-pmi",
+        "cn-ppi"
+      ]
+    },
+    {
+      "id": "company-301161",
+      "name": "唯万密封 · 盈利质量",
+      "firstSeen": "2026-10-15",
+      "status": "补充证据 · 维持研究",
+      "originalThesis": "精密密封件是观察工业供应链的切口。利润增长较快，但现金兑现弱于利润表现；竞争壁垒和客户粘性仍需进一步验证。",
+      "update": "2026-10-15晚报：新复核既有半年报收现、分产品毛利率及10月8日回购用途。销售收现同比约−2.17%；回购用于持股计划或激励，不能视为已确定注销。原盈利质量观察条件未得到足够新证据满足，也尚未证伪；当前估值仍缺，维持研究。",
+      "invalidation": "经营现金流持续落后于利润、应收款显著恶化、毛利率下降或增长主要依赖不可持续因素。",
+      "sourceIds": [
+        "company-301161",
+        "filing-1225596718"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "cn-cpi",
+      "title": "2026年9月份居民消费价格同比上涨0.9%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261014_1965477.html",
+      "publishedDate": "2026-10-14",
+      "dataPeriod": "2026年9月",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "cn-pmi",
+      "title": "2026年9月中国采购经理指数运行情况",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260930_1965449.html",
+      "publishedDate": "2026-09-30",
+      "dataPeriod": "2026年9月",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "us-fed",
+      "title": "Federal Reserve issues FOMC statement",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "publishedDate": "2026-09-16 14:00 EDT",
+      "dataPeriod": "2026年9月会议",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "us-calendar",
+      "title": "FOMC calendars and information",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "publishedDate": "2026-10-07（页面更新）",
+      "dataPeriod": "2026年会议日历",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "company-301161",
+      "title": "唯万密封 2026 年半年度报告",
+      "publisher": "深交所 · 公司公告",
+      "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-08-25/514a80ed-7cd7-4e64-b917-17dc5edcfcdd.PDF",
+      "publishedDate": "2026-08-25",
+      "dataPeriod": "2026H1未经审计；第8、17–21、22、41、48–49、55–56页；回购交易另见10月8日公告",
+      "accessedAt": "2026-10-15T18:41:13+08:00"
+    },
+    {
+      "id": "etf-fee",
+      "title": "中证500ETF（510580）费率结构",
+      "publisher": "易方达基金",
+      "url": "https://api.efunds.com.cn/owch/oURL/app/fee_m.shtml?fundcode=510580",
+      "publishedDate": "页面未注明生效日",
+      "dataPeriod": "2026-10-15核验",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "etf-identity",
+      "title": "易方达中证500ETF产品资料",
+      "publisher": "易方达基金",
+      "url": "https://api.efunds.com.cn/owch/oURL/website/weixin/wx_fundinfo.shtml?fundcode=510580",
+      "publishedDate": "官网产品页",
+      "dataPeriod": "基金规模字段截至2026-06-30",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "filing-1225596718",
+      "title": "关于以集中竞价交易方式回购公司股份的进展公告",
+      "publisher": "巨潮资讯",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-08/1225596718.PDF",
+      "publishedDate": "2026-10-08",
+      "dataPeriod": "截至2026-09-30回购进展；2026-10-08公告，第1页正文已核验",
+      "accessedAt": "2026-10-15T18:41:13+08:00"
+    },
+    {
+      "id": "filing-1225589886",
+      "title": "关于变更持续督导财务顾问主办人的公告",
+      "publisher": "巨潮资讯",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225589886.PDF",
+      "publishedDate": "2026-09-30",
+      "dataPeriod": "公告目录核验；正文待研究复核",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "filing-1225556740",
+      "title": "关于参加2026年上海辖区上市公司集体接待日暨中报业绩说明会活动的公告",
+      "publisher": "巨潮资讯",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-10/1225556740.PDF",
+      "publishedDate": "2026-09-10",
+      "dataPeriod": "公告目录核验；正文待研究复核",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "live-csi",
+      "title": "沪深300官方指数行情",
+      "publisher": "中证指数",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
+      "publishedDate": "2026-10-15",
+      "dataPeriod": "2026-10-15 16:29:55 Asia/Shanghai",
+      "accessedAt": "2026-10-15T18:41:13+08:00"
+    },
+    {
+      "id": "fed-ca688a2700",
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "publishedDate": "2026-10-13T18:00:00+00:00",
+      "dataPeriod": "官方发布日 2026-10-13",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "fed-08dfdbdaa9",
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "publishedDate": "2026-10-07T18:00:00+00:00",
+      "dataPeriod": "官方发布日 2026-10-07",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "fed-da3bcbb85f",
+      "title": "Federal Reserve issues FOMC statement",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "publishedDate": "2026-09-16T18:00:00+00:00",
+      "dataPeriod": "官方发布日 2026-09-16",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "nbs-2231e58346",
+      "title": "2026年9月份居民消费价格同比上涨0.9%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965477.html",
+      "publishedDate": "2026-10-14",
+      "dataPeriod": "2026年9月份居民消费价格同比上涨0.9%",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "nbs-8a873fc7dd",
+      "title": "2026年9月份工业生产者出厂价格同比上涨5.0% 环比上涨1.2%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965476.html",
+      "publishedDate": "2026-10-14",
+      "dataPeriod": "2026年9月份工业生产者出厂价格同比上涨5.0% 环比上涨1.2%",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "nbs-fc6845edf9",
+      "title": "2026年9月下旬流通领域重要生产资料市场价格变动情况",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261008_1965465.html",
+      "publishedDate": "2026-10-09",
+      "dataPeriod": "2026年9月下旬流通领域重要生产资料市场价格变动情况",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "live-treasury",
+      "title": "Daily Treasury Par Yield Curve Rates",
+      "publisher": "美国财政部",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "publishedDate": "2026-10-14",
+      "dataPeriod": "10年期 / 2026-10-14",
+      "accessedAt": "2026-10-15T18:41:13+08:00"
+    },
+    {
+      "id": "cn-ppi",
+      "title": "2026年9月份工业生产者价格：出厂与购进价格分项",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965476.html",
+      "publishedDate": "2026-10-14 09:30 Asia/Shanghai",
+      "dataPeriod": "2026年9月；同比与环比口径分别标注",
+      "accessedAt": "2026-10-15T18:41:13+08:00"
+    },
+    {
+      "id": "us-fed-minutes",
+      "title": "2026年9月15–16日FOMC会议纪要正文",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20260916.htm",
+      "publishedDate": "2026-10-07 14:00 America/New_York",
+      "dataPeriod": "2026-09-15至16日会议；不是10月15日新决议",
+      "accessedAt": "2026-10-15T18:41:13+08:00"
+    },
+    {
+      "id": "live-nasdaq",
+      "title": "Nasdaq Composite 官方指数报价",
+      "publisher": "Nasdaq",
+      "url": "https://api.nasdaq.com/api/quote/COMP/info?assetclass=index",
+      "publishedDate": "2026-10-14 America/New_York",
+      "dataPeriod": "原始时标 Oct 14, 2026；isRealTime=false",
+      "accessedAt": "2026-10-15T18:41:13+08:00"
+    }
+  ],
+  "evidenceUpdates": [
+    {
+      "title": "2026年9月份居民消费价格同比上涨0.9%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965477.html",
+      "publishedAt": "2026-10-14",
+      "summary": "已获取官方正文。统计数据期以标题和原文为准，发布日不等于观察期。"
+    },
+    {
+      "title": "2026年9月份工业生产者出厂价格同比上涨5.0% 环比上涨1.2%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965476.html",
+      "publishedAt": "2026-10-14",
+      "summary": "今晚已复核分项：购进价格同比+6.9%，出厂价格+5.0%。口径不同，不能将差值等同利润率降幅；发布于10月14日，数据为9月。"
+    },
+    {
+      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "publishedAt": "2026-10-13",
+      "summary": "原始政策发布。需区分利率决议、实施说明与会议纪要；不据标题推断利率变化。"
+    },
+    {
+      "title": "2026年9月下旬流通领域重要生产资料市场价格变动情况",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261008_1965465.html",
+      "publishedAt": "2026-10-09",
+      "summary": "已获取官方正文。统计数据期以标题和原文为准，发布日不等于观察期。"
+    },
+    {
+      "title": "唯万密封 · 关于以集中竞价交易方式回购公司股份的进展公告",
+      "publisher": "巨潮资讯 · 公司公告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-08/1225596718.PDF",
+      "publishedAt": "2026-10-08",
+      "summary": "今晚已读PDF：截至9月30日回购58.59万股、金额1,487.02万元，不含交易费；拟用于员工持股或股权激励。历史均价约25.38元，不是当前价格或买入底线。"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "publishedAt": "2026-10-07",
+      "summary": "已进一步阅读9月会议纪要正文：多数与会者当时认为年内可能仍需加息，但后续取决于新数据；纪要于10月7日公布，不是今日决议。"
+    },
+    {
+      "title": "唯万密封 · 关于变更持续督导财务顾问主办人的公告",
+      "publisher": "巨潮资讯 · 公司公告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225589886.PDF",
+      "publishedAt": "2026-09-30",
+      "summary": "公告已在官方目录核实；PDF财务数字尚未经自动提取复核，不据此更新公司财务或估值结论。"
+    },
+    {
+      "title": "Federal Reserve issues FOMC statement",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "publishedAt": "2026-09-16",
+      "summary": "原始政策发布。需区分利率决议、实施说明与会议纪要；不据标题推断利率变化。"
+    },
+    {
+      "title": "唯万密封 · 关于参加2026年上海辖区上市公司集体接待日暨中报业绩说明会活动的公告",
+      "publisher": "巨潮资讯 · 公司公告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-10/1225556740.PDF",
+      "publishedAt": "2026-09-10",
+      "summary": "公告已在官方目录核实；PDF财务数字尚未经自动提取复核，不据此更新公司财务或估值结论。"
+    }
+  ],
+  "freshness": {
+    "checkedAt": "2026-10-15T18:41:13+08:00",
+    "researchUpdatedAt": "2026-10-15T18:41:13+08:00",
+    "mode": "晚间深度研究已复核",
+    "reason": "新增复核9月PPI分项、9月FOMC会议纪要、唯万密封回购用途及半年报现金收现与分产品毛利率；维持等待验证，无新增买入评级。各项事实保留原披露日和数据期。"
+  }
+}
