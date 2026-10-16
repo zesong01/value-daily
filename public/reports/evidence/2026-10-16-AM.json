@@ -1,0 +1,186 @@
+{
+  "revision": "2026-10-16-am-research-conversion-inflation-v1",
+  "reportId": "2026-10-16-AM",
+  "researchUpdatedAt": "2026-10-16T10:47:22+08:00",
+  "previousResearchUpdatedAt": "2026-10-15T18:41:13+08:00",
+  "decision": "维持等待验证与深入研究；无新增买入评级",
+  "newEvidence": [
+    "2026-10-16发布2025年全国科技经费公报",
+    "2026-10-15美国PPI与零售销售",
+    "新增复核原半年报研发费用化口径"
+  ],
+  "primarySources": [
+    {
+      "id": "company-301161",
+      "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-08-25/514a80ed-7cd7-4e64-b917-17dc5edcfcdd.PDF",
+      "publishedDate": "2026-08-25",
+      "dataPeriod": "2026H1未经审计；本期新增复核第20、137–138页研发投入及费用化；此前财务、回购依据保留"
+    },
+    {
+      "id": "live-csi",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
+      "publishedDate": "2026-10-16",
+      "dataPeriod": "2026-10-16 10:40:40 Asia/Shanghai"
+    },
+    {
+      "id": "live-treasury",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "publishedDate": "2026-10-15",
+      "dataPeriod": "10年期 / 2026-10-15 America/New_York"
+    },
+    {
+      "id": "live-nasdaq",
+      "url": "https://api.nasdaq.com/api/quote/COMP/info?assetclass=index",
+      "publishedDate": "2026-10-15",
+      "dataPeriod": "Oct 15, 2026 America/New_York；isRealTime=false"
+    },
+    {
+      "id": "cn-rd-2025",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261016_1965512.html",
+      "publishedDate": "2026-10-16 09:30 Asia/Shanghai",
+      "dataPeriod": "2025全年；全国R&D/GDP与行业R&D/营业收入口径不同"
+    },
+    {
+      "id": "us-ppi-202609",
+      "url": "https://www.bls.gov/news.release/archives/ppi_10152026.htm",
+      "publishedDate": "2026-10-15 08:30 America/New_York",
+      "dataPeriod": "2026年9月；环比季调，同比未季调"
+    },
+    {
+      "id": "us-cpi-202609",
+      "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "publishedDate": "2026-10-14 08:30 America/New_York",
+      "dataPeriod": "2026年9月；环比季调，同比未季调；本期补充核验，非隔夜新发布"
+    },
+    {
+      "id": "us-retail-202609",
+      "url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+      "publishedDate": "2026-10-15 08:30 America/New_York",
+      "dataPeriod": "2026年9月初值；名义金额，经季节及节假日调整，未剔除价格；第1–3页，当前报告链接日后会更新"
+    }
+  ],
+  "retrieval": [
+    {
+      "file": "rd.html",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261016_1965512.html",
+      "http": 200,
+      "sha256": "b11e043b6e9aea30317fafb5ff8d4a9422e4da0dbc3a54f0931a7d5cda59b695",
+      "accessedAt": "2026-10-16T10:41:03+08:00"
+    },
+    {
+      "file": "cpi.html",
+      "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "error": "HTTPError"
+    },
+    {
+      "file": "csi.json",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
+      "http": 200,
+      "sha256": "6e1da84d2892ec7221ab0b49c6825dfc7a6edd3508e19e1240ef3eabde3edad8",
+      "accessedAt": "2026-10-16T10:41:01+08:00"
+    },
+    {
+      "file": "nasdaq.json",
+      "url": "https://api.nasdaq.com/api/quote/COMP/info?assetclass=index",
+      "http": 200,
+      "sha256": "a9d8eb9668caa3b71b94bb5ba7c6c1667247017a6b505bbf9d14ebab862e2485",
+      "accessedAt": "2026-10-16T10:40:59+08:00"
+    },
+    {
+      "file": "treasury.csv",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "http": 200,
+      "sha256": "deca2a0cd133c8eb9acf72f2fa0931fd559aad000db5d5b02cdb1feac7dd6da1",
+      "accessedAt": "2026-10-16T10:40:59+08:00"
+    },
+    {
+      "file": "filings.json",
+      "url": "https://www.cninfo.com.cn/new/hisAnnouncement/query",
+      "http": 200,
+      "sha256": "861e996bf74b171bf6c3f59aca783e8b8862eb776b7161612908916f980682ec",
+      "accessedAt": "2026-10-16T10:40:59+08:00"
+    }
+  ],
+  "additionalAccess": [
+    {
+      "url": "https://www.bls.gov/news.release/archives/ppi_10152026.htm",
+      "method": "浏览工具打开官方正文",
+      "accessedAt": "2026-10-16T10:47:22+08:00"
+    },
+    {
+      "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "method": "浏览工具打开官方正文",
+      "accessedAt": "2026-10-16T10:47:22+08:00"
+    },
+    {
+      "url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+      "method": "浏览工具打开官方正文",
+      "accessedAt": "2026-10-16T10:47:22+08:00"
+    }
+  ],
+  "cachedPdf": {
+    "sourceId": "company-301161",
+    "sha256": "cb555103848d923ac48d57ba539ff8d0ddff9ec15c81da5da8b9b08a143c8b3c",
+    "reviewedPages": [
+      20,
+      137,
+      138
+    ],
+    "note": "复核原官方PDF缓存；未声称本次重新下载"
+  },
+  "calculations": [
+    {
+      "name": "2026H1研发投入/营业收入",
+      "formula": "25345660.96/444701140.23*100",
+      "value": 5.699481891791685,
+      "unit": "%",
+      "sourceIds": [
+        "company-301161"
+      ]
+    },
+    {
+      "name": "2025H1研发投入/营业收入",
+      "formula": "20376443.56/385517880.58*100",
+      "value": 5.285473018616997,
+      "unit": "%",
+      "sourceIds": [
+        "company-301161"
+      ]
+    },
+    {
+      "name": "10年期收益率日变化",
+      "formula": "(5.10-5.19)*100",
+      "value": -9,
+      "unit": "bp",
+      "period": "2026-10-15对10月14日，美国当地日期",
+      "sourceIds": [
+        "live-treasury"
+      ]
+    }
+  ],
+  "companyScreen": {
+    "company": "301161.SZ",
+    "result": "继续研究；不升级评级",
+    "valuationBasis": "保留已核验历史回购成本及半年末账面净资产参照；现价、TTM、可比估值仍缺",
+    "filingCheck": "巨潮目录本次返回最新公告为2026-10-08；不据目录推定新财报"
+  },
+  "missing": [
+    "恒生科技、美元指数及黄金一手报价",
+    "个股现价与TTM/可比估值",
+    "完整市场成交额与资金净流向"
+  ],
+  "chronology": "新公报的观察期是2025年，CPI为10月14日既有发布，PPI/零售为10月15日隔夜发布；A股10:40盘中，未冒充08:30或当日收盘。",
+  "preservedTheses": [
+    {
+      "id": "industrial-recovery",
+      "firstSeen": "2026-10-15",
+      "originalThesis": "制造业PMI回到扩张区间，但中小企业仍偏弱。关注订单能否传导至回款，而非仅靠生产扩张。"
+    },
+    {
+      "id": "company-301161",
+      "firstSeen": "2026-10-15",
+      "originalThesis": "精密密封件是观察工业供应链的切口。利润增长较快，但现金兑现弱于利润表现；竞争壁垒和客户粘性仍需进一步验证。"
+    }
+  ],
+  "notification": "routine_no_material_opportunity_or_invalidation"
+}
