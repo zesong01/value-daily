@@ -101,7 +101,8 @@ def fed():
         body=request(url)
         if len(clean(body))<200:continue
         ident='fed-'+hashlib.sha256(url.encode()).hexdigest()[:10]
-        items.append(dict(title=title,publisher='美联储',url=url,publishedAt=dt.strftime('%Y-%m-%d'),summary='原始政策发布。需区分利率决议、实施说明与会议纪要；不据标题推断利率变化。'))
+        excerpt=clean(item.findtext('description',''))[:800]
+        items.append(dict(title=title,publisher='美联储',url=url,publishedAt=dt.strftime('%Y-%m-%d'),summary=excerpt or '官方正文已获取，请阅读原文。',summaryKind='原文摘要' if excerpt else '采集说明'))
         sources.append(source(ident,title,'美联储',url,dt.isoformat(),'官方发布日 '+dt.strftime('%Y-%m-%d')))
         if len(items)==3:break
     if not items:raise ValueError('No verified Federal Reserve publications')
@@ -117,11 +118,11 @@ def nbs():
         for href,label in links:
             title=clean(label);url=urllib.parse.urljoin(base,html.unescape(href))
             if not title or url in seen or not url.startswith('https://www.stats.gov.cn/'):continue
-            if not any(k in title for k in ['价格','采购经理','经济','工业','消费','投资']):continue
+            if not any(k in title for k in ['价格','采购经理','经济','工业','消费','投资','科技','研发']):continue
             article=request(url)
             if len(clean(article))<200:continue
             seen.add(url);ident='nbs-'+hashlib.sha256(url.encode()).hexdigest()[:10]
-            items.append(dict(title=title,publisher='国家统计局',url=url,publishedAt=date[0],summary='已获取官方正文。统计数据期以标题和原文为准，发布日不等于观察期。'))
+            items.append(dict(title=title,publisher='国家统计局',url=url,publishedAt=date[0],summary='官方正文已获取。数据期以原文为准，发布日不等于观察期。',summaryKind='采集说明'))
             sources.append(source(ident,title,'国家统计局',url,date[0],title))
             if len(items)>=3:return {'evidence':items,'sources':sources}
     if not items:raise ValueError('No verifiable statistical releases')
@@ -138,7 +139,8 @@ def filings():
         path=a['adjunctUrl']
         if not re.fullmatch(r'finalpage/[0-9-]+/[A-Za-z0-9.-]+\.PDF',path,re.I):continue
         pdf='https://static.cninfo.com.cn/'+path
-        items.append(dict(title='唯万密封 · '+title,publisher='巨潮资讯 · 公司公告',url=pdf,publishedAt=day,summary='公告已在官方目录核实；PDF财务数字尚未经自动提取复核，不据此更新公司财务或估值结论。'))
+        if day>DATE:continue
+        items.append(dict(title='唯万密封 · '+title,publisher='巨潮资讯 · 公司公告',url=pdf,publishedAt=day,summary='官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。',summaryKind='采集说明'))
         sources.append(source('filing-'+str(a['announcementId']),title,'巨潮资讯',pdf,day,'公告目录核验；正文待研究复核'))
     return {'evidence':items,'sources':sources,'checkedFilings':True}
 
@@ -146,8 +148,7 @@ def load(path):return json.loads(path.read_text(encoding='utf-8-sig'))
 def save(path,value):
     tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');tmp.replace(path)
 
-def main():
-    previous=load(REPORTS/'latest.json');report=json.loads(json.dumps(previous))
+def collect():
     successes={};failures={}
     collectors={'中证指数':csi,'Nasdaq':nasdaq,'美国财政部':treasury,'美联储':fed,'国家统计局':nbs,'巨潮资讯':filings}
     with futures.ThreadPoolExecutor(max_workers=6) as pool:
@@ -156,21 +157,40 @@ def main():
             name=jobs[job]
             try:successes[name]=job.result();print(name+': OK')
             except Exception as e:failures[name]=type(e).__name__;print(name+': collection unavailable ('+type(e).__name__+')')
-    status=dict(checkedAt=STAMP,successes=list(successes),failures=failures,mode='官方数据与证据采集')
+    return successes,failures
+
+
+def publish(successes, failures, reports=REPORTS):
+    previous=load(reports/'latest.json');report=json.loads(json.dumps(previous))
+    status=dict(checkedAt=STAMP,successes=sorted(successes),failures=failures,mode='GitHub 自动采集 · 未人工复核')
     # Failure does not relabel an old report as fresh.
-    if not successes:
-        save(REPORTS/'update-status.json',status)
-        raise RuntimeError('All sources failed. Previous reports remain unchanged.')
+    if len(successes)<2:
+        save(reports/'update-status.json',{**status,'contentChanged':False,'lastReport':previous['date']+'-'+previous['edition']})
+        raise RuntimeError('Fewer than two sources succeeded. Previous reports remain unchanged.')
     by_source={s['id']:s for s in report['sources']}
-    evidence=[]
-    for result in successes.values():
-        for s in result.get('sources',[]):by_source[s['id']]=s
-        evidence.extend(result.get('evidence',[]))
+    # A failed provider must not erase its previous releases. Each item retains
+    # its own check time; older research entries remain explicitly dated.
+    evidence={e['url']:e for e in report.get('evidenceUpdates',[])}
+    collected_ids=set()
+    for name,result in sorted(successes.items()):
+        result=json.loads(json.dumps(result))
+        if 'market' in result:
+            # Research can cite an older quote. Never overwrite that source's
+            # observation date when refreshing today's market card.
+            suffix=hashlib.sha256(json.dumps(result['market'],sort_keys=True).encode()).hexdigest()[:12]
+            mapping={s['id']:s['id']+'-'+suffix for s in result.get('sources',[])}
+            for s in result.get('sources',[]):s['id']=mapping[s['id']]
+            result['market']['sourceIds']=[mapping[id] for id in result['market']['sourceIds']]
+        for s in result.get('sources',[]):
+            by_source.setdefault(s['id'],s)
+            collected_ids.add(s['id'])
+        for e in result.get('evidence',[]):
+            evidence[e['url']]={**e,'collector':name,'checkedAt':STAMP}
         if 'market' in result:
             quote=result['market']
             for market in report['markets']:
                 if market['code']==quote['code']:market.update(quote)
-    evidence=sorted({e['url']:e for e in evidence}.values(),key=lambda x:x['publishedAt'],reverse=True)[:9]
+    evidence=sorted(evidence.values(),key=lambda x:(x['publishedAt'],x['url']),reverse=True)[:18]
     report['evidenceUpdates']=evidence
     # Keep only referenced and newly collected source IDs; never silently grow forever.
     ids=set()
@@ -182,7 +202,9 @@ def main():
         elif isinstance(v,list):
             for x in v:refs(x)
     refs(report)
-    for result in successes.values():ids.update(s['id'] for s in result.get('sources',[]))
+    ids.update(collected_ids)
+    evidence_urls={e['url'] for e in evidence}
+    ids.update(s['id'] for s in by_source.values() if s['url'] in evidence_urls)
     report['sources']=[s for id,s in by_source.items() if id in ids]
     for name in failures:
         code={'中证指数':'CSI 300','Nasdaq':'NASDAQ','美国财政部':'US 10Y'}.get(name)
@@ -190,37 +212,41 @@ def main():
             if market['code']==code:market['status']='本次采集失败 · 保留原日期' if market['value'] is not None else '采集未成功 · 暂无核实数据'
     # Same data is a checked status, not a fabricated new edition.
     def signature(r):
-        prices=[{k:m.get(k) for k in ('code','value','change','changeUnit','asOf')} for m in r['markets']]
-        return json.dumps(dict(markets=prices,evidence=r.get('evidenceUpdates',[])),sort_keys=True,ensure_ascii=False)
-    if signature(report)==signature(previous):
-        save(REPORTS/'update-status.json',{**status,'contentChanged':False,'lastReport':previous['date']+'-'+previous['edition']})
+        prices=[{k:m.get(k) for k in ('code','value','change','changeUnit','asOf','status')} for m in r['markets']]
+        items=[{k:v for k,v in e.items() if k!='checkedAt'} for e in r.get('evidenceUpdates',[])]
+        return json.dumps(dict(markets=prices,evidence=items),sort_keys=True,ensure_ascii=False)
+    changed=signature(report)!=signature(previous)
+    same_edition=previous['date']==DATE and previous['edition']==EDITION
+    if not changed and same_edition and previous.get('freshness',{}).get('method')=='script':
+        save(reports/'update-status.json',{**status,'contentChanged':False,'lastReport':previous['date']+'-'+previous['edition']})
         print('No new evidence. Retained the published report and research date.');return
     report['date']=DATE;report['edition']=EDITION;report['publishedAt']=STAMP
-    report['title']=('早间' if EDITION=='AM' else '收盘')+'市场与官方证据更新'
+    report['title']=('早间' if EDITION=='AM' else '晚间')+'行情与官方发布'
+    report['subtitle']='官方数据自动采集 · 保留原始标题与来源 · 不调用模型生成分析'
     report['cutoff']='数据采集 '+STAMP+'；行情与公告各自保留观察日期和时区'
     baseline=previous.get('freshness',{}).get('researchUpdatedAt',previous['publishedAt'])
-    report['freshness']=dict(checkedAt=STAMP,researchUpdatedAt=baseline,mode='数据已更新 · 研究观点维持',reason='本次自动核验行情与官方发布。公司财报、估值和投资逻辑沿用标注日期的研究基线；公告出现不代表已完成财报复核。')
+    report['freshness']=dict(checkedAt=STAMP,researchUpdatedAt=baseline,method='script',mode='自动采集 · 未人工复核',reason=('本期抓取到更新的行情或官方发布。' if changed else '与上一期相比，未发现新的行情或官方发布。')+'由 GitHub 定时脚本采集，不生成新的投资判断。下方研究保留原日期，历史估值、催化与行动条件需重新核实后使用。')
     missing=[m['name'] for m in report['markets'] if m['value'] is None]
     report['completeness']='部分数据待核实'
     report['coverageNote']='行情按各自来源日期展示；'+('、'.join(missing)+'暂未接入可核验报价。' if missing else '')+('本次未成功采集：'+'、'.join(failures)+'。' if failures else '')+'财报和投资观点保留独立研究日期，不将数据刷新当作评级变化。'
-    report['flow']['observation']='成交额、完整行业表现与资金流尚未完成一手核验；不能从指数涨跌推断资金净流入。'
-    # Maintain the original thesis verbatim and disclose the scope of this update.
-    for t in report['tracking']:
-        if '基线' not in t['update'] and '自动采集' not in t['update']:continue
-        t['update']='自动采集已检查最新官方发布。尚无新的人工复核财务或估值证据，维持原研究条件；研究基线日期 '+baseline[:10]+'。'
+    # All seven editorial modules, thesis history and their sources are retained.
+    # The script collects evidence only; it cannot validate an investment thesis.
     identifier=DATE+'-'+EDITION
-    existing=REPORTS/(identifier+'.json')
+    existing=reports/(identifier+'.json')
     if existing.exists():
         old=load(existing);rev=hashlib.sha256(json.dumps(old,sort_keys=True).encode()).hexdigest()[:12]
-        versions=REPORTS/'revisions';versions.mkdir(exist_ok=True)
+        versions=reports/'revisions';versions.mkdir(exist_ok=True)
         save(versions/(identifier+'-'+rev+'.json'),old)
-    save(existing,report);save(REPORTS/'latest.json',report)
-    index=load(REPORTS/'index.json')
+    save(existing,report);save(reports/'latest.json',report)
+    index=load(reports/'index.json')
     index['entries']=[e for e in index['entries'] if e['id']!=identifier]
     index['entries'].append({k:report[k] for k in ['date','edition','title','publishedAt']}|{'id':identifier})
     index['entries'].sort(key=lambda e:e['id'],reverse=True)
-    save(REPORTS/'index.json',index)
-    save(REPORTS/'update-status.json',{**status,'contentChanged':True,'lastReport':identifier})
+    save(reports/'index.json',index)
+    save(reports/'update-status.json',{**status,'contentChanged':changed,'lastReport':identifier})
     print('Published evidence snapshot '+identifier+'; research baseline '+baseline[:10]+'.')
+
+def main():
+    publish(*collect())
 
 if __name__=='__main__':main()

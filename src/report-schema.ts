@@ -4,8 +4,8 @@ const refs = z.array(z.string()).max(20);
 const statement = z.object({ kind: z.enum(['事实','推断','预测']), text, sourceIds: refs });
 const idea = z.object({ id: text, name: text, code: z.string(), sector: text, status: z.enum(['等待验证','深入研究','估值观察','条件满足','逻辑失效']), thesis: text, valuation: text, catalyst: text, action: text, invalidation: text, horizon: text, evidence: z.array(statement).min(1).max(15), sourceIds: refs });
 export const reportSchema = z.object({
-  freshness: z.object({checkedAt:text,researchUpdatedAt:text,mode:text,reason:text}).optional(),
-  evidenceUpdates: z.array(z.object({title:text,publisher:text,url:z.string().url(),publishedAt:text,summary:text})).optional(),
+  freshness: z.object({checkedAt:text,researchUpdatedAt:text,mode:text,reason:text,method:z.literal('script').optional()}).optional(),
+  evidenceUpdates: z.array(z.object({title:text,publisher:text,url:z.string().url(),publishedAt:text,summary:text,collector:text.optional(),checkedAt:text.optional(),summaryKind:z.enum(['原文摘要','采集说明']).optional()})).optional(),
   schemaVersion: z.literal(1), date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), edition: z.enum(['AM','PM']),
   title: text, subtitle: text, publishedAt: z.string().datetime({ offset: true }), cutoff: text,
   completeness: z.enum(['已核验','部分数据待核实']), coverageNote: text,
