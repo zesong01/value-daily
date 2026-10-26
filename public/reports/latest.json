@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "edition": "PM",
   "title": "晚间行情与官方发布",
   "subtitle": "官方数据自动采集 · 保留原始标题与来源 · 不调用模型生成分析",
-  "publishedAt": "2026-10-25T22:27:43+08:00",
-  "cutoff": "数据采集 2026-10-25T22:27:43+08:00；行情与公告各自保留观察日期和时区",
+  "publishedAt": "2026-10-26T13:02:26+08:00",
+  "cutoff": "数据采集 2026-10-26T13:02:26+08:00；行情与公告各自保留观察日期和时区",
   "completeness": "部分数据待核实",
   "coverageNote": "行情按各自来源日期展示；恒生科技、美元指数、现货黄金暂未接入可核验报价。本次未成功采集：Nasdaq。财报和投资观点保留独立研究日期，不将数据刷新当作评级变化。",
   "conclusions": [
@@ -55,12 +55,12 @@
       "code": "CSI 300",
       "unit": "点",
       "timezone": "Asia/Shanghai",
-      "value": 4105.33,
-      "change": 1.71,
-      "asOf": "2026-10-23 16:29:55",
+      "value": 4084.8,
+      "change": -0.5,
+      "asOf": "2026-10-26 13:02:09",
       "status": "官方行情 · 以显示时点为准",
       "sourceIds": [
-        "live-csi-0e10b26b723a"
+        "live-csi-589a7f22d2e5"
       ],
       "changeUnit": "%"
     },
@@ -812,15 +812,6 @@
       "accessedAt": "2026-10-19"
     },
     {
-      "id": "live-csi-0e10b26b723a",
-      "title": "沪深300官方指数行情",
-      "publisher": "中证指数",
-      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
-      "publishedDate": "2026-10-23",
-      "dataPeriod": "2026-10-23 16:29:55",
-      "accessedAt": "2026-10-23"
-    },
-    {
       "id": "nbs-26edc4a25f",
       "title": "2026年10月中旬流通领域重要生产资料市场价格变动情况",
       "publisher": "国家统计局",
@@ -837,6 +828,15 @@
       "publishedDate": "2026-10-23",
       "dataPeriod": "10年期 / 2026-10-23",
       "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "live-csi-589a7f22d2e5",
+      "title": "沪深300官方指数行情",
+      "publisher": "中证指数",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
+      "publishedDate": "2026-10-26",
+      "dataPeriod": "2026-10-26 13:02:09",
+      "accessedAt": "2026-10-26"
     }
   ],
   "evidenceUpdates": [
@@ -848,7 +848,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-10-25T22:27:43+08:00"
+      "checkedAt": "2026-10-26T13:02:26+08:00"
     },
     {
       "title": "前三季度经济运行总体平稳 高质量发展取得新成效",
@@ -858,7 +858,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-10-25T22:27:43+08:00"
+      "checkedAt": "2026-10-26T13:02:26+08:00"
     },
     {
       "title": "2026年9月份规模以上工业增加值增长5.5%",
@@ -868,7 +868,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-10-25T22:27:43+08:00"
+      "checkedAt": "2026-10-26T13:02:26+08:00"
     },
     {
       "title": "2026年1—9月份全国固定资产投资基本情况",
@@ -939,7 +939,7 @@
       "summary": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-10-25T22:27:43+08:00"
+      "checkedAt": "2026-10-26T13:02:26+08:00"
     },
     {
       "title": "2026年9月下旬流通领域重要生产资料市场价格变动情况",
@@ -956,7 +956,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-10-25T22:27:43+08:00"
+      "checkedAt": "2026-10-26T13:02:26+08:00"
     },
     {
       "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
@@ -966,7 +966,7 @@
       "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-10-25T22:27:43+08:00"
+      "checkedAt": "2026-10-26T13:02:26+08:00"
     },
     {
       "title": "唯万密封 · 关于变更持续督导财务顾问主办人的公告",
@@ -976,7 +976,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-10-25T22:27:43+08:00"
+      "checkedAt": "2026-10-26T13:02:26+08:00"
     },
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -986,7 +986,7 @@
       "summary": "Federal Reserve issues FOMC statement",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-10-25T22:27:43+08:00"
+      "checkedAt": "2026-10-26T13:02:26+08:00"
     },
     {
       "title": "唯万密封 · 关于参加2026年上海辖区上市公司集体接待日暨中报业绩说明会活动的公告",
@@ -996,14 +996,14 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-10-25T22:27:43+08:00"
+      "checkedAt": "2026-10-26T13:02:26+08:00"
     }
   ],
   "freshness": {
-    "checkedAt": "2026-10-25T22:27:43+08:00",
+    "checkedAt": "2026-10-26T13:02:26+08:00",
     "researchUpdatedAt": "2026-10-16T10:47:22+08:00",
     "method": "script",
     "mode": "自动采集 · 未人工复核",
-    "reason": "与上一期相比，未发现新的行情或官方发布。由 GitHub 定时脚本采集，不生成新的投资判断。下方研究保留原日期，历史估值、催化与行动条件需重新核实后使用。"
+    "reason": "本期抓取到更新的行情或官方发布。由 GitHub 定时脚本采集，不生成新的投资判断。下方研究保留原日期，历史估值、催化与行动条件需重新核实后使用。"
   }
 }
