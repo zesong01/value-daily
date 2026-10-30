@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-30",
-  "edition": "AM",
-  "title": "早间行情与官方发布",
+  "edition": "PM",
+  "title": "晚间行情与官方发布",
   "subtitle": "官方数据自动采集 · 保留原始标题与来源 · 不调用模型生成分析",
-  "publishedAt": "2026-10-30T00:59:46+08:00",
-  "cutoff": "数据采集 2026-10-30T00:59:46+08:00；行情与公告各自保留观察日期和时区",
+  "publishedAt": "2026-10-30T14:05:17+08:00",
+  "cutoff": "数据采集 2026-10-30T14:05:17+08:00；行情与公告各自保留观察日期和时区",
   "completeness": "部分数据待核实",
   "coverageNote": "行情按各自来源日期展示；恒生科技、美元指数、现货黄金暂未接入可核验报价。本次未成功采集：Nasdaq。财报和投资观点保留独立研究日期，不将数据刷新当作评级变化。",
   "conclusions": [
@@ -55,12 +55,12 @@
       "code": "CSI 300",
       "unit": "点",
       "timezone": "Asia/Shanghai",
-      "value": 4041.84,
-      "change": -1.03,
-      "asOf": "2026-10-29 16:29:57",
+      "value": 4010.29,
+      "change": -0.78,
+      "asOf": "2026-10-30 14:05:10",
       "status": "官方行情 · 以显示时点为准",
       "sourceIds": [
-        "live-csi-058d914b3855"
+        "live-csi-61be0722e8cc"
       ],
       "changeUnit": "%"
     },
@@ -105,12 +105,12 @@
       "code": "US 10Y",
       "unit": "%",
       "timezone": "America/New_York",
-      "value": 5.05,
-      "change": 6.0,
-      "asOf": "2026-10-28",
+      "value": 4.98,
+      "change": -7.0,
+      "asOf": "2026-10-29",
       "status": "官方日度收益率 · 非实时",
       "sourceIds": [
-        "live-treasury-fcf4b6760c89"
+        "live-treasury-f34b9ab2ce8e"
       ],
       "changeUnit": "bp"
     },
@@ -803,15 +803,6 @@
       "accessedAt": "2026-10-27"
     },
     {
-      "id": "live-treasury-fcf4b6760c89",
-      "title": "Daily Treasury Par Yield Curve Rates",
-      "publisher": "美国财政部",
-      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "publishedDate": "2026-10-28",
-      "dataPeriod": "10年期 / 2026-10-28",
-      "accessedAt": "2026-10-29"
-    },
-    {
       "id": "fed-a0c3e1be77",
       "title": "Federal Reserve issues FOMC statement",
       "publisher": "美联储",
@@ -819,15 +810,6 @@
       "publishedDate": "2026-10-28T18:00:00+00:00",
       "dataPeriod": "官方发布日 2026-10-28",
       "accessedAt": "2026-10-29"
-    },
-    {
-      "id": "live-csi-058d914b3855",
-      "title": "沪深300官方指数行情",
-      "publisher": "中证指数",
-      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
-      "publishedDate": "2026-10-29",
-      "dataPeriod": "2026-10-29 16:29:57",
-      "accessedAt": "2026-10-30"
     },
     {
       "id": "filing-1225640603",
@@ -846,6 +828,24 @@
       "publishedDate": "2026-10-30",
       "dataPeriod": "公告目录核验；正文待研究复核",
       "accessedAt": "2026-10-30"
+    },
+    {
+      "id": "live-csi-61be0722e8cc",
+      "title": "沪深300官方指数行情",
+      "publisher": "中证指数",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
+      "publishedDate": "2026-10-30",
+      "dataPeriod": "2026-10-30 14:05:10",
+      "accessedAt": "2026-10-30"
+    },
+    {
+      "id": "live-treasury-f34b9ab2ce8e",
+      "title": "Daily Treasury Par Yield Curve Rates",
+      "publisher": "美国财政部",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "publishedDate": "2026-10-29",
+      "dataPeriod": "10年期 / 2026-10-29",
+      "accessedAt": "2026-10-30"
     }
   ],
   "evidenceUpdates": [
@@ -857,7 +857,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-10-30T00:59:46+08:00"
+      "checkedAt": "2026-10-30T14:05:17+08:00"
     },
     {
       "title": "唯万密封 · 2026年三季度报告",
@@ -867,7 +867,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-10-30T00:59:46+08:00"
+      "checkedAt": "2026-10-30T14:05:17+08:00"
     },
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -877,7 +877,7 @@
       "summary": "Federal Reserve issues FOMC statement",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-10-30T00:59:46+08:00"
+      "checkedAt": "2026-10-30T14:05:17+08:00"
     },
     {
       "title": "2026年1—9月份全国规模以上工业企业利润增长15.5%",
@@ -887,7 +887,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-10-30T00:59:46+08:00"
+      "checkedAt": "2026-10-30T14:05:17+08:00"
     },
     {
       "title": "2026年10月中旬流通领域重要生产资料市场价格变动情况",
@@ -897,7 +897,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-10-30T00:59:46+08:00"
+      "checkedAt": "2026-10-30T14:05:17+08:00"
     },
     {
       "title": "前三季度经济运行总体平稳 高质量发展取得新成效",
@@ -907,7 +907,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-10-30T00:59:46+08:00"
+      "checkedAt": "2026-10-30T14:05:17+08:00"
     },
     {
       "title": "2026年9月份规模以上工业增加值增长5.5%",
@@ -988,7 +988,7 @@
       "summary": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-10-30T00:59:46+08:00"
+      "checkedAt": "2026-10-30T14:05:17+08:00"
     },
     {
       "title": "2026年9月下旬流通领域重要生产资料市场价格变动情况",
@@ -1005,7 +1005,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-10-30T00:59:46+08:00"
+      "checkedAt": "2026-10-30T14:05:17+08:00"
     },
     {
       "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
@@ -1015,11 +1015,11 @@
       "summary": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-10-30T00:59:46+08:00"
+      "checkedAt": "2026-10-30T14:05:17+08:00"
     }
   ],
   "freshness": {
-    "checkedAt": "2026-10-30T00:59:46+08:00",
+    "checkedAt": "2026-10-30T14:05:17+08:00",
     "researchUpdatedAt": "2026-10-16T10:47:22+08:00",
     "method": "script",
     "mode": "自动采集 · 未人工复核",
