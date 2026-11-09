@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-09",
-  "edition": "AM",
-  "title": "早间行情与官方发布",
+  "edition": "PM",
+  "title": "晚间行情与官方发布",
   "subtitle": "官方数据自动采集 · 保留原始标题与来源 · 不调用模型生成分析",
-  "publishedAt": "2026-11-09T00:44:09+08:00",
-  "cutoff": "数据采集 2026-11-09T00:44:09+08:00；行情与公告各自保留观察日期和时区",
+  "publishedAt": "2026-11-09T14:55:55+08:00",
+  "cutoff": "数据采集 2026-11-09T14:55:55+08:00；行情与公告各自保留观察日期和时区",
   "completeness": "部分数据待核实",
   "coverageNote": "行情按各自来源日期展示；恒生科技、美元指数、现货黄金暂未接入可核验报价。本次未成功采集：Nasdaq。财报和投资观点保留独立研究日期，不将数据刷新当作评级变化。",
   "conclusions": [
@@ -55,12 +55,12 @@
       "code": "CSI 300",
       "unit": "点",
       "timezone": "Asia/Shanghai",
-      "value": 4054.28,
-      "change": -1.44,
-      "asOf": "2026-11-06 16:29:56",
+      "value": 4055.79,
+      "change": 0.04,
+      "asOf": "2026-11-09 14:55:42",
       "status": "官方行情 · 以显示时点为准",
       "sourceIds": [
-        "live-csi-fa6942a6f9fb"
+        "live-csi-0502ee1d534e"
       ],
       "changeUnit": "%"
     },
@@ -848,15 +848,6 @@
       "accessedAt": "2026-11-04"
     },
     {
-      "id": "live-csi-fa6942a6f9fb",
-      "title": "沪深300官方指数行情",
-      "publisher": "中证指数",
-      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
-      "publishedDate": "2026-11-06",
-      "dataPeriod": "2026-11-06 16:29:56",
-      "accessedAt": "2026-11-07"
-    },
-    {
       "id": "live-treasury-cbd2cabd12c6",
       "title": "Daily Treasury Par Yield Curve Rates",
       "publisher": "美国财政部",
@@ -864,9 +855,56 @@
       "publishedDate": "2026-11-06",
       "dataPeriod": "10年期 / 2026-11-06",
       "accessedAt": "2026-11-07"
+    },
+    {
+      "id": "live-csi-0502ee1d534e",
+      "title": "沪深300官方指数行情",
+      "publisher": "中证指数",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
+      "publishedDate": "2026-11-09",
+      "dataPeriod": "2026-11-09 14:55:42",
+      "accessedAt": "2026-11-09"
+    },
+    {
+      "id": "nbs-aaa6cf6555",
+      "title": "2026年10月份居民消费价格同比上涨0.7%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965795.html",
+      "publishedDate": "2026-11-09",
+      "dataPeriod": "2026年10月份居民消费价格同比上涨0.7%",
+      "accessedAt": "2026-11-09"
+    },
+    {
+      "id": "nbs-7c0e35a3ee",
+      "title": "2026年10月份工业生产者出厂价格同比上涨5.7% 环比上涨0.7%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965794.html",
+      "publishedDate": "2026-11-09",
+      "dataPeriod": "2026年10月份工业生产者出厂价格同比上涨5.7% 环比上涨0.7%",
+      "accessedAt": "2026-11-09"
     }
   ],
   "evidenceUpdates": [
+    {
+      "title": "2026年10月份居民消费价格同比上涨0.7%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965795.html",
+      "publishedAt": "2026-11-09",
+      "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
+      "summaryKind": "采集说明",
+      "collector": "国家统计局",
+      "checkedAt": "2026-11-09T14:55:55+08:00"
+    },
+    {
+      "title": "2026年10月份工业生产者出厂价格同比上涨5.7% 环比上涨0.7%",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261109_1965794.html",
+      "publishedAt": "2026-11-09",
+      "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
+      "summaryKind": "采集说明",
+      "collector": "国家统计局",
+      "checkedAt": "2026-11-09T14:55:55+08:00"
+    },
     {
       "title": "2026年10月下旬流通领域重要生产资料市场价格变动情况",
       "publisher": "国家统计局",
@@ -875,7 +913,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-11-09T00:44:09+08:00"
+      "checkedAt": "2026-11-09T14:55:55+08:00"
     },
     {
       "title": "唯万密封 · 关于以集中竞价交易方式回购公司股份的进展公告",
@@ -885,7 +923,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-11-09T00:44:09+08:00"
+      "checkedAt": "2026-11-09T14:55:55+08:00"
     },
     {
       "title": "2026年10月中国采购经理指数运行情况",
@@ -905,7 +943,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-11-09T00:44:09+08:00"
+      "checkedAt": "2026-11-09T14:55:55+08:00"
     },
     {
       "title": "唯万密封 · 2026年三季度报告",
@@ -915,7 +953,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-11-09T00:44:09+08:00"
+      "checkedAt": "2026-11-09T14:55:55+08:00"
     },
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -925,7 +963,7 @@
       "summary": "Federal Reserve issues FOMC statement",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-11-09T00:44:09+08:00"
+      "checkedAt": "2026-11-09T14:55:55+08:00"
     },
     {
       "title": "2026年1—9月份全国规模以上工业企业利润增长15.5%",
@@ -1020,30 +1058,13 @@
       "summaryKind": "采集说明",
       "collector": "国家统计局",
       "checkedAt": "2026-10-18T22:04:25+08:00"
-    },
-    {
-      "title": "Consumer Price Index — September 2026（归档正文）",
-      "publisher": "美国劳工统计局",
-      "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
-      "publishedAt": "2026-10-14",
-      "summary": "补充复核既有9月CPI：环比季调+0.6%，核心环比+0.3%。不是10月16日新公布数据。"
-    },
-    {
-      "title": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-      "publisher": "美联储",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
-      "publishedAt": "2026-10-13",
-      "summary": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-      "summaryKind": "原文摘要",
-      "collector": "美联储",
-      "checkedAt": "2026-11-09T00:44:09+08:00"
     }
   ],
   "freshness": {
-    "checkedAt": "2026-11-09T00:44:09+08:00",
+    "checkedAt": "2026-11-09T14:55:55+08:00",
     "researchUpdatedAt": "2026-10-16T10:47:22+08:00",
     "method": "script",
     "mode": "自动采集 · 未人工复核",
-    "reason": "与上一期相比，未发现新的行情或官方发布。由 GitHub 定时脚本采集，不生成新的投资判断。下方研究保留原日期，历史估值、催化与行动条件需重新核实后使用。"
+    "reason": "本期抓取到更新的行情或官方发布。由 GitHub 定时脚本采集，不生成新的投资判断。下方研究保留原日期，历史估值、催化与行动条件需重新核实后使用。"
   }
 }
