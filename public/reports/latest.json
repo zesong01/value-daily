@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-12",
-  "edition": "PM",
-  "title": "晚间行情与官方发布",
+  "date": "2026-11-13",
+  "edition": "AM",
+  "title": "早间行情与官方发布",
   "subtitle": "官方数据自动采集 · 保留原始标题与来源 · 不调用模型生成分析",
-  "publishedAt": "2026-11-12T15:27:23+08:00",
-  "cutoff": "数据采集 2026-11-12T15:27:23+08:00；行情与公告各自保留观察日期和时区",
+  "publishedAt": "2026-11-13T02:27:47+08:00",
+  "cutoff": "数据采集 2026-11-13T02:27:47+08:00；行情与公告各自保留观察日期和时区",
   "completeness": "部分数据待核实",
   "coverageNote": "行情按各自来源日期展示；恒生科技、美元指数、现货黄金暂未接入可核验报价。本次未成功采集：Nasdaq。财报和投资观点保留独立研究日期，不将数据刷新当作评级变化。",
   "conclusions": [
@@ -57,10 +57,10 @@
       "timezone": "Asia/Shanghai",
       "value": 4043.93,
       "change": -0.78,
-      "asOf": "2026-11-12 15:27:10",
+      "asOf": "2026-11-12 16:29:56",
       "status": "官方行情 · 以显示时点为准",
       "sourceIds": [
-        "live-csi-f9f30b459409"
+        "live-csi-a28f74d75437"
       ],
       "changeUnit": "%"
     },
@@ -641,30 +641,12 @@
       "accessedAt": "2026-10-15"
     },
     {
-      "id": "fed-08dfdbdaa9",
-      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "publisher": "美联储",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-      "publishedDate": "2026-10-07T18:00:00+00:00",
-      "dataPeriod": "官方发布日 2026-10-07",
-      "accessedAt": "2026-10-15"
-    },
-    {
       "id": "nbs-2231e58346",
       "title": "2026年9月份居民消费价格同比上涨0.9%",
       "publisher": "国家统计局",
       "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965477.html",
       "publishedDate": "2026-10-14",
       "dataPeriod": "2026年9月份居民消费价格同比上涨0.9%",
-      "accessedAt": "2026-10-15"
-    },
-    {
-      "id": "nbs-8a873fc7dd",
-      "title": "2026年9月份工业生产者出厂价格同比上涨5.0% 环比上涨1.2%",
-      "publisher": "国家统计局",
-      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965476.html",
-      "publishedDate": "2026-10-14",
-      "dataPeriod": "2026年9月份工业生产者出厂价格同比上涨5.0% 环比上涨1.2%",
       "accessedAt": "2026-10-15"
     },
     {
@@ -875,16 +857,35 @@
       "accessedAt": "2026-11-11"
     },
     {
-      "id": "live-csi-f9f30b459409",
+      "id": "live-csi-a28f74d75437",
       "title": "沪深300官方指数行情",
       "publisher": "中证指数",
       "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf-oneday?indexCode=000300",
       "publishedDate": "2026-11-12",
-      "dataPeriod": "2026-11-12 15:27:10",
-      "accessedAt": "2026-11-12"
+      "dataPeriod": "2026-11-12 16:29:56",
+      "accessedAt": "2026-11-13"
+    },
+    {
+      "id": "fed-87a784bdd6",
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "publishedDate": "2026-11-12T17:45:00+00:00",
+      "dataPeriod": "官方发布日 2026-11-12",
+      "accessedAt": "2026-11-13"
     }
   ],
   "evidenceUpdates": [
+    {
+      "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "publisher": "美联储",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm",
+      "publishedAt": "2026-11-12",
+      "summary": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+      "summaryKind": "原文摘要",
+      "collector": "美联储",
+      "checkedAt": "2026-11-13T02:27:47+08:00"
+    },
     {
       "title": "2026年10月份居民消费价格同比上涨0.7%",
       "publisher": "国家统计局",
@@ -893,7 +894,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-11-12T15:27:23+08:00"
+      "checkedAt": "2026-11-13T02:27:47+08:00"
     },
     {
       "title": "2026年10月份工业生产者出厂价格同比上涨5.7% 环比上涨0.7%",
@@ -903,7 +904,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-11-12T15:27:23+08:00"
+      "checkedAt": "2026-11-13T02:27:47+08:00"
     },
     {
       "title": "2026年10月下旬流通领域重要生产资料市场价格变动情况",
@@ -913,7 +914,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-11-12T15:27:23+08:00"
+      "checkedAt": "2026-11-13T02:27:47+08:00"
     },
     {
       "title": "唯万密封 · 关于以集中竞价交易方式回购公司股份的进展公告",
@@ -923,7 +924,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-11-12T15:27:23+08:00"
+      "checkedAt": "2026-11-13T02:27:47+08:00"
     },
     {
       "title": "2026年10月中国采购经理指数运行情况",
@@ -943,7 +944,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-11-12T15:27:23+08:00"
+      "checkedAt": "2026-11-13T02:27:47+08:00"
     },
     {
       "title": "唯万密封 · 2026年三季度报告",
@@ -953,7 +954,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-11-12T15:27:23+08:00"
+      "checkedAt": "2026-11-13T02:27:47+08:00"
     },
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -963,7 +964,7 @@
       "summary": "Federal Reserve issues FOMC statement",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-11-12T15:27:23+08:00"
+      "checkedAt": "2026-11-13T02:27:47+08:00"
     },
     {
       "title": "2026年1—9月份全国规模以上工业企业利润增长15.5%",
@@ -1048,20 +1049,10 @@
       "summaryKind": "采集说明",
       "collector": "国家统计局",
       "checkedAt": "2026-10-18T22:04:25+08:00"
-    },
-    {
-      "title": "2026年9月份工业生产者出厂价格同比上涨5.0% 环比上涨1.2%",
-      "publisher": "国家统计局",
-      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965476.html",
-      "publishedAt": "2026-10-14",
-      "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
-      "summaryKind": "采集说明",
-      "collector": "国家统计局",
-      "checkedAt": "2026-10-18T22:04:25+08:00"
     }
   ],
   "freshness": {
-    "checkedAt": "2026-11-12T15:27:23+08:00",
+    "checkedAt": "2026-11-13T02:27:47+08:00",
     "researchUpdatedAt": "2026-10-16T10:47:22+08:00",
     "method": "script",
     "mode": "自动采集 · 未人工复核",
