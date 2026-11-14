@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-14",
-  "edition": "AM",
-  "title": "早间行情与官方发布",
+  "edition": "PM",
+  "title": "晚间行情与官方发布",
   "subtitle": "官方数据自动采集 · 保留原始标题与来源 · 不调用模型生成分析",
-  "publishedAt": "2026-11-14T01:54:59+08:00",
-  "cutoff": "数据采集 2026-11-14T01:54:59+08:00；行情与公告各自保留观察日期和时区",
+  "publishedAt": "2026-11-14T14:47:15+08:00",
+  "cutoff": "数据采集 2026-11-14T14:47:15+08:00；行情与公告各自保留观察日期和时区",
   "completeness": "部分数据待核实",
   "coverageNote": "行情按各自来源日期展示；恒生科技、美元指数、现货黄金暂未接入可核验报价。本次未成功采集：Nasdaq。财报和投资观点保留独立研究日期，不将数据刷新当作评级变化。",
   "conclusions": [
@@ -105,12 +105,12 @@
       "code": "US 10Y",
       "unit": "%",
       "timezone": "America/New_York",
-      "value": 5.1,
-      "change": 12.0,
-      "asOf": "2026-11-12",
+      "value": 5.15,
+      "change": 5.0,
+      "asOf": "2026-11-13",
       "status": "官方日度收益率 · 非实时",
       "sourceIds": [
-        "live-treasury-58fbe9c277e9"
+        "live-treasury-af575d408880"
       ],
       "changeUnit": "bp"
     },
@@ -641,15 +641,6 @@
       "accessedAt": "2026-10-15"
     },
     {
-      "id": "nbs-2231e58346",
-      "title": "2026年9月份居民消费价格同比上涨0.9%",
-      "publisher": "国家统计局",
-      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965477.html",
-      "publishedDate": "2026-10-14",
-      "dataPeriod": "2026年9月份居民消费价格同比上涨0.9%",
-      "accessedAt": "2026-10-15"
-    },
-    {
       "id": "live-treasury",
       "title": "Daily Treasury Par Yield Curve Rates",
       "publisher": "美国财政部",
@@ -857,15 +848,6 @@
       "accessedAt": "2026-11-13"
     },
     {
-      "id": "live-treasury-58fbe9c277e9",
-      "title": "Daily Treasury Par Yield Curve Rates",
-      "publisher": "美国财政部",
-      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
-      "publishedDate": "2026-11-12",
-      "dataPeriod": "10年期 / 2026-11-12",
-      "accessedAt": "2026-11-13"
-    },
-    {
       "id": "live-csi-4d74977bf61d",
       "title": "沪深300官方指数行情",
       "publisher": "中证指数",
@@ -873,9 +855,37 @@
       "publishedDate": "2026-11-13",
       "dataPeriod": "2026-11-13 16:29:58",
       "accessedAt": "2026-11-14"
+    },
+    {
+      "id": "nbs-afda53098d",
+      "title": "2026年11月上旬流通领域重要生产资料市场价格变动情况",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261113_1965820.html",
+      "publishedDate": "2026-11-14",
+      "dataPeriod": "2026年11月上旬流通领域重要生产资料市场价格变动情况",
+      "accessedAt": "2026-11-14"
+    },
+    {
+      "id": "live-treasury-af575d408880",
+      "title": "Daily Treasury Par Yield Curve Rates",
+      "publisher": "美国财政部",
+      "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+      "publishedDate": "2026-11-13",
+      "dataPeriod": "10年期 / 2026-11-13",
+      "accessedAt": "2026-11-14"
     }
   ],
   "evidenceUpdates": [
+    {
+      "title": "2026年11月上旬流通领域重要生产资料市场价格变动情况",
+      "publisher": "国家统计局",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261113_1965820.html",
+      "publishedAt": "2026-11-14",
+      "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
+      "summaryKind": "采集说明",
+      "collector": "国家统计局",
+      "checkedAt": "2026-11-14T14:47:15+08:00"
+    },
     {
       "title": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
       "publisher": "美联储",
@@ -884,7 +894,7 @@
       "summary": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-11-14T01:54:59+08:00"
+      "checkedAt": "2026-11-14T14:47:15+08:00"
     },
     {
       "title": "2026年10月份居民消费价格同比上涨0.7%",
@@ -894,7 +904,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-11-14T01:54:59+08:00"
+      "checkedAt": "2026-11-14T14:47:15+08:00"
     },
     {
       "title": "2026年10月份工业生产者出厂价格同比上涨5.7% 环比上涨0.7%",
@@ -904,7 +914,7 @@
       "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
       "summaryKind": "采集说明",
       "collector": "国家统计局",
-      "checkedAt": "2026-11-14T01:54:59+08:00"
+      "checkedAt": "2026-11-14T14:47:15+08:00"
     },
     {
       "title": "2026年10月下旬流通领域重要生产资料市场价格变动情况",
@@ -924,7 +934,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-11-14T01:54:59+08:00"
+      "checkedAt": "2026-11-14T14:47:15+08:00"
     },
     {
       "title": "2026年10月中国采购经理指数运行情况",
@@ -944,7 +954,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-11-14T01:54:59+08:00"
+      "checkedAt": "2026-11-14T14:47:15+08:00"
     },
     {
       "title": "唯万密封 · 2026年三季度报告",
@@ -954,7 +964,7 @@
       "summary": "官方公告目录已获取。PDF财务数字未自动提取，不据此更新公司财务或估值。",
       "summaryKind": "采集说明",
       "collector": "巨潮资讯",
-      "checkedAt": "2026-11-14T01:54:59+08:00"
+      "checkedAt": "2026-11-14T14:47:15+08:00"
     },
     {
       "title": "Federal Reserve issues FOMC statement",
@@ -964,7 +974,7 @@
       "summary": "Federal Reserve issues FOMC statement",
       "summaryKind": "原文摘要",
       "collector": "美联储",
-      "checkedAt": "2026-11-14T01:54:59+08:00"
+      "checkedAt": "2026-11-14T14:47:15+08:00"
     },
     {
       "title": "2026年1—9月份全国规模以上工业企业利润增长15.5%",
@@ -1039,20 +1049,10 @@
       "url": "https://www.bls.gov/news.release/archives/ppi_10152026.htm",
       "publishedAt": "2026-10-15",
       "summary": "最终需求PPI环比季调+1.3%、同比未季调+6.3%；剔除食品、能源和贸易服务后环比+0.5%。发布时间为美国东部08:30。"
-    },
-    {
-      "title": "2026年9月份居民消费价格同比上涨0.9%",
-      "publisher": "国家统计局",
-      "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261014_1965477.html",
-      "publishedAt": "2026-10-14",
-      "summary": "官方正文已获取。数据期以原文为准，发布日不等于观察期。",
-      "summaryKind": "采集说明",
-      "collector": "国家统计局",
-      "checkedAt": "2026-10-18T22:04:25+08:00"
     }
   ],
   "freshness": {
-    "checkedAt": "2026-11-14T01:54:59+08:00",
+    "checkedAt": "2026-11-14T14:47:15+08:00",
     "researchUpdatedAt": "2026-10-16T10:47:22+08:00",
     "method": "script",
     "mode": "自动采集 · 未人工复核",
