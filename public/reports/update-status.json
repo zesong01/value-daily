@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-14T14:47:15+08:00",
+  "checkedAt": "2026-11-15T00:38:57+08:00",
   "successes": [
     "中证指数",
     "国家统计局",
@@ -11,6 +11,6 @@
     "Nasdaq": "TimeoutError"
   },
   "mode": "GitHub 自动采集 · 未人工复核",
-  "contentChanged": true,
-  "lastReport": "2026-11-14-PM"
+  "contentChanged": false,
+  "lastReport": "2026-11-15-AM"
 }
